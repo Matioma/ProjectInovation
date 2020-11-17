@@ -11,40 +11,48 @@ public class GridBasedPlayerController : MonoBehaviour, IPlayerActions
     Vector2Int position;
     Vector2Int direction;
 
+    CellData cellData;
 
 
     void Start() {
         direction = new Vector2Int((int)transform.forward.x, (int)transform.forward.z);
-        gameGrid.PlaceGameObjectOnCell(this.gameObject, position.x, position.y);
+        cellData = new CellData(this.gameObject, 1);
+        gameGrid.PlaceGameObjectOnCell(cellData, position.x, position.y);
+
+        
     }
 
     public void MoveBackwards(float speed)
     {
-
+        Vector2Int position = new Vector2Int(this.position.x, this.position.y);
         gameGrid.RemoveObjectFromCell(position.x, position.y);
+
         position = position - direction;
-        gameGrid.PlaceGameObjectOnCell(this.gameObject, position.x, position.y);
+        if (gameGrid.PlaceGameObjectOnCell(cellData, position.x, position.y))
+        {
+            this.position = position;
+        };
     }
     public void MoveForward(float speed)
     {
+        Vector2Int position = new Vector2Int(this.position.x, this.position.y);
         gameGrid.RemoveObjectFromCell(position.x, position.y);
+
         position = position + direction;
-        gameGrid.PlaceGameObjectOnCell(this.gameObject, position.x, position.y);
+        
+        if (gameGrid.PlaceGameObjectOnCell(cellData, position.x, position.y)) {
+            this.position = position;
+        };
     }
 
     public void MoveLeft(float speed)
     {
        throw new System.NotImplementedException();
     }
-
-
-
-
     public void MoveRight(float speed)
     {
         throw new System.NotImplementedException();
     }
-
     public void TurnLeft(float amount = 90)
     {
         if (direction.x > 0)

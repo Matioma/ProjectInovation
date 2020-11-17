@@ -14,16 +14,13 @@ public class GameGrid : MonoBehaviour
     int gridElementSize = 10;
 
     [SerializeField]
-    GameObject[,] grid;
-
-
-
+    CellData[,] grid;
 
 
 
     private void OnValidate()
     {
-        grid = new GameObject[gridSizeX, gridSizeZ];
+        grid = new CellData[gridSizeX, gridSizeZ];
         for (int i = 0; i < gridSizeX; i++) {
             for (int j = 0; j < gridSizeZ; j++) {
                 grid[i, j] = null;
@@ -57,15 +54,24 @@ public class GameGrid : MonoBehaviour
         return new Vector3(xPos, 0, zPos);
     }
 
-    public bool IsCellEmpty(int x, int z){
-        return grid[x,z] == null;
+    public int IsCellEmpty(int x, int z){
+        if (x < 0 || x >= gridSizeX) return -1;
+        if (z < 0 || z >= gridSizeZ) return -1;
+
+        if (grid[x, z] == null) return 0;
+        return grid[x, z].value;
     }
 
-    public void PlaceGameObjectOnCell(GameObject objectToPlace, int x, int z) {
-        if (IsCellEmpty(x, z)) {
-            grid[x, z] = objectToPlace;
+    public bool PlaceGameObjectOnCell(CellData objectToPlace, int x, int z) {
+        if (IsCellEmpty(x, z) == -1) {
+            return false;
         }
-        objectToPlace.transform.position = GetCellCenter(x, z);
+        if (IsCellEmpty(x, z) == 0)
+        {
+            grid[x, z] = objectToPlace;
+            objectToPlace.gameObject.transform.position = GetCellCenter(x, z);
+        }
+        return true;
     }
 
     public void RemoveObjectFromCell(int x, int z) {
@@ -73,10 +79,12 @@ public class GameGrid : MonoBehaviour
     }
 }
 
+public class CellData {
+    public GameObject gameObject;
+    public int value;
 
-public struct GridCollision { 
-        
-
-
-
-} 
+    public CellData(GameObject obj, int value) {
+        gameObject = obj;
+        this.value = value;
+    }
+}
