@@ -70,10 +70,19 @@ public class GameGrid : MonoBehaviour
         {
             grid[x, z] = objectToPlace;
             objectToPlace.gameObject.transform.position = GetCellCenter(x, z);
+            return true;
         }
-        return true;
+        else
+        {
+            var objectCollided= grid[x, z].gameObject.GetComponent<IGridCollidable>();
+            var movingObject = objectToPlace.gameObject.GetComponent<IGridCollidable>();
+            if (objectCollided != null && movingObject != null) {
+                objectCollided.OnGridCollision(movingObject);
+            } 
+            
+        }
+        return false;
     }
-
     public void RemoveObjectFromCell(int x, int z) {
         grid[x, z] = null;
     }

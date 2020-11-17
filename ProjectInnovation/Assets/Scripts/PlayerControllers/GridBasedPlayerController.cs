@@ -18,8 +18,6 @@ public class GridBasedPlayerController : MonoBehaviour, IPlayerActions
         direction = new Vector2Int((int)transform.forward.x, (int)transform.forward.z);
         cellData = new CellData(this.gameObject, 1);
         gameGrid.PlaceGameObjectOnCell(cellData, position.x, position.y);
-
-        
     }
 
     public void MoveBackwards(float speed)
