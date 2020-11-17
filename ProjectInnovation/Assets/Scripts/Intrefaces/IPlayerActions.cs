@@ -4,11 +4,11 @@ using UnityEngine;
 
 public interface IPlayerActions
 {
-    void MoveForward(float speed);
-    void MoveLeft(float speed);
-    void MoveRight(float speed);
+    void MoveForward(float speed=0);
+    void MoveLeft(float speed=0);
+    void MoveRight(float speed=0);
 
-    void MoveBackwards(float speed);
+    void MoveBackwards(float speed=0);
 
     void TurnLeft(float amount = 90);
     void TurnRight(float amount = 90);

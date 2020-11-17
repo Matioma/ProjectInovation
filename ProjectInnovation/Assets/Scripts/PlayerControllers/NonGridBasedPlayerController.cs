@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class PlayerController : MonoBehaviour, IPlayerActions
+public class NonGridBasedPlayerController : MonoBehaviour, IPlayerActions
 {
-    Rigidbody rigidbody;
+    new Rigidbody rigidbody;
     void Awake() {
         rigidbody = GetComponent<Rigidbody>();
     }

@@ -6,6 +6,7 @@ using UnityEngine;
 public enum Controls { 
     WASD_Perpendicular,
     Mouse_Perpendicular,
+    Grid_BasedMovement
 }
 
 [RequireComponent(typeof(IPlayerActions))]
@@ -16,6 +17,8 @@ public class PlayerInputManager : MonoBehaviour
 
     [SerializeField]
     Controls typeOfControls;
+
+
 
     private void Update()
     {
@@ -38,7 +41,6 @@ public class PlayerInputManager : MonoBehaviour
                 GetComponent<IPlayerActions>().MoveLeft(movementSpeed);
             }
         }
-
         if (typeOfControls == Controls.Mouse_Perpendicular)
         {
             if (Input.GetMouseButtonDown(0))
@@ -59,6 +61,25 @@ public class PlayerInputManager : MonoBehaviour
             {
                 GetComponent<IPlayerActions>().MoveBackwards(-scroll * movementSpeed * 1.0f / -scroll);
             }
+        }
+
+        if (typeOfControls == Controls.Grid_BasedMovement) {
+            if (Input.GetKeyDown(KeyCode.W)) {
+                GetComponent<IPlayerActions>().MoveForward();
+            }
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                GetComponent<IPlayerActions>().MoveBackwards();
+            }
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+                GetComponent<IPlayerActions>().TurnLeft();
+            }
+            if (Input.GetKeyDown(KeyCode.D))
+            {
+                GetComponent<IPlayerActions>().TurnRight();
+            }
+           
         }
     }
 }
