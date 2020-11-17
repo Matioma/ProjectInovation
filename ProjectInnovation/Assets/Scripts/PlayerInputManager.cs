@@ -2,26 +2,63 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+public enum Controls { 
+    WASD_Perpendicular,
+    Mouse_Perpendicular,
+}
+
 [RequireComponent(typeof(IPlayerActions))]
 public class PlayerInputManager : MonoBehaviour
 {
+    [SerializeField]
+    float movementSpeed=10.0f;
+
+    [SerializeField]
+    Controls typeOfControls;
+
     private void Update()
     {
-        if (Input.GetKey(KeyCode.W)) {
-            GetComponent<IPlayerActions>().MoveForward(10);
-        }
-        if (Input.GetKey(KeyCode.S))
+        if (typeOfControls == Controls.WASD_Perpendicular)
         {
-            GetComponent<IPlayerActions>().MoveBackwards(10);
+            if (Input.GetKey(KeyCode.W))
+            {
+                GetComponent<IPlayerActions>().MoveForward(movementSpeed);
+            }
+            if (Input.GetKey(KeyCode.S))
+            {
+                GetComponent<IPlayerActions>().MoveBackwards(movementSpeed);
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                GetComponent<IPlayerActions>().MoveRight(movementSpeed);
+            }
+            if (Input.GetKey(KeyCode.A))
+            {
+                GetComponent<IPlayerActions>().MoveLeft(movementSpeed);
+            }
         }
-        if (Input.GetKey(KeyCode.D))
+
+        if (typeOfControls == Controls.Mouse_Perpendicular)
         {
-            GetComponent<IPlayerActions>().MoveRight(10);
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            GetComponent<IPlayerActions>().MoveLeft(10);
+            if (Input.GetMouseButtonDown(0))
+            {
+                GetComponent<IPlayerActions>().TurnLeft();
+            }
+            if (Input.GetMouseButtonDown(1))
+            {
+                GetComponent<IPlayerActions>().TurnRight();
+            }
+
+            float scroll = Input.GetAxis("Mouse ScrollWheel");
+            if (scroll > 0)
+            {
+                GetComponent<IPlayerActions>().MoveForward(scroll * movementSpeed * 1.0f / scroll);
+            }
+            if (scroll < 0)
+            {
+                GetComponent<IPlayerActions>().MoveBackwards(-scroll * movementSpeed * 1.0f / -scroll);
+            }
         }
     }
-
 }
