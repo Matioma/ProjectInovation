@@ -26,10 +26,9 @@ public class SoundsPosition : MonoBehaviour
         {
 
             float positionX = Random.Range(0, size.x) - (size.x / 2.0f);
-            Debug.Log(positionX);
             float positionY = Random.Range(0, size.y) - (size.y / 2.0f);
             float positionZ = Random.Range(0, size.z) - (size.z / 2.0f);
-            Vector3 RelativePositionRange = new Vector3(positionX, positionZ, positionY);
+            Vector3 RelativePositionRange = new Vector3(positionX, positionY, positionZ);
             positions.Add(RelativePositionRange + transform.position);
         }
 

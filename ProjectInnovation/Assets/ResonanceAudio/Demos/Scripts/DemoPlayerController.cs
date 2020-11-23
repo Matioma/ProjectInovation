@@ -36,6 +36,8 @@ public class DemoPlayerController : MonoBehaviour {
   // Camera rotation sensitivity.
   private const float sensitivity = 2.0f;
 
+  public bool canMove = false;
+
   void Start() {
     characterController = GetComponent<CharacterController>();
     Vector3 rotation = mainCamera.transform.localRotation.eulerAngles;
@@ -63,16 +65,19 @@ public class DemoPlayerController : MonoBehaviour {
     rotationY += sensitivity * mouseX;
     rotationX = Mathf.Clamp(rotationX, -clampAngleDegrees, clampAngleDegrees);
     mainCamera.transform.localRotation = Quaternion.Euler(rotationX, rotationY, 0.0f);
-    // Update the position.
+        // Update the position.
 
 
-    //float movementX = Input.GetAxis("Horizontal");
-    //float movementY = Input.GetAxis("Vertical");
-    //Vector3 movementDirection = new Vector3(movementX, 0.0f, movementY);
-    //movementDirection = mainCamera.transform.localRotation * movementDirection;
-    //movementDirection.y = 0.0f;
-    //characterController.SimpleMove(movementSpeed * movementDirection);
-  }
+        if (canMove) {
+            float movementX = Input.GetAxis("Horizontal");
+            float movementY = Input.GetAxis("Vertical");
+            Vector3 movementDirection = new Vector3(movementX, 0.0f, movementY);
+            movementDirection = mainCamera.transform.localRotation * movementDirection;
+            movementDirection.y = 0.0f;
+            characterController.SimpleMove(movementSpeed * movementDirection);
+        }
+
+    }
 
   // Sets the cursor lock for first-person control.
   private void SetCursorLock(bool lockCursor) {
