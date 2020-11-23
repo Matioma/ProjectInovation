@@ -7,28 +7,32 @@ public class SoundsPosition : MonoBehaviour
     [SerializeField]
     int numberOfTests = 10;
 
-
     [SerializeField]
     List<Vector3> positions;
     int currentSound = 0;
-
 
     [SerializeField]
     public Vector3 size;
 
     private void Start()
     {
+        GenerateRandomPositions();
+        UpdateSoundPosition();
+    }
+
+    void GenerateRandomPositions()
+    {
         for (int i = 0; i < numberOfTests; i++)
         {
-            float positionX = Random.Range(0, size.x) - (size.x / 2);
-            float positionY = Random.Range(0, size.y) - (size.y / 2);
-            float positionZ = Random.Range(0, size.z) - (size.z / 2);
-            Vector3 RelativePositionRange = new Vector3(positionX, positionZ, positionY);
 
+            float positionX = Random.Range(0, size.x) - (size.x / 2.0f);
+            Debug.Log(positionX);
+            float positionY = Random.Range(0, size.y) - (size.y / 2.0f);
+            float positionZ = Random.Range(0, size.z) - (size.z / 2.0f);
+            Vector3 RelativePositionRange = new Vector3(positionX, positionZ, positionY);
             positions.Add(RelativePositionRange + transform.position);
         }
-        UpdateSoundPosition();
-       
+
     }
 
     public void UpdateSoundPosition() {
