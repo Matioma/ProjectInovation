@@ -5714,13 +5714,13 @@ MonoBehaviour:
   bypassRoomEffects: 0
   directivityAlpha: 0
   directivitySharpness: 1
-  listenerDirectivityAlpha: 0.55
-  listenerDirectivitySharpness: 1
+  listenerDirectivityAlpha: 0.33
+  listenerDirectivitySharpness: 5.62
   gainDb: 0
   nearFieldEffectEnabled: 0
   nearFieldEffectGain: 1
   occlusionEnabled: 1
-  occlusionIntensity: 0
+  occlusionIntensity: 1.3
   quality: 2
 --- !u!82 &1309644198
 AudioSource:
