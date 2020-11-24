@@ -66,8 +66,6 @@ public class DemoPlayerController : MonoBehaviour {
     rotationY += sensitivity * mouseX;
     rotationX = Mathf.Clamp(rotationX, -clampAngleDegrees, clampAngleDegrees);
     mainCamera.transform.localRotation = Quaternion.Euler(rotationX, rotationY, 0.0f);
-        // Update the position.
-
 
         if (canMove) {
             float movementX = Input.GetAxis("Horizontal");
