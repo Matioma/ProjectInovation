@@ -24,6 +24,7 @@ public class DemoPlayerController : MonoBehaviour {
   private CharacterController characterController = null;
 
   // Player movement speed.
+  [SerializeField]
   private float movementSpeed = 5.0f;
 
   // Target camera rotation in degrees.
