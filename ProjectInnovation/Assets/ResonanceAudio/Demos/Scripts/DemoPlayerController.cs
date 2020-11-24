@@ -75,7 +75,9 @@ public class DemoPlayerController : MonoBehaviour {
             Vector3 movementDirection = new Vector3(movementX, 0.0f, movementY);
             movementDirection = mainCamera.transform.localRotation * movementDirection;
             movementDirection.y = 0.0f;
-            characterController.SimpleMove(movementSpeed * movementDirection);
+            //movementDirection.normalized;
+
+            characterController.SimpleMove(movementSpeed * movementDirection.normalized);
         }
 
     }

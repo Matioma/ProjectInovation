@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2b0f2e7fc23e46c78f6dc1a54c32708, type: 3}
+  m_Name: Apartment
+  m_EditorClassIdentifier: 
+  surfaceMaterialFromGuid:
+    guids:
+    - 0000000000000000f000000000000000
+    - d6df057165bf941a28cc779e40355207
+    - 918b98b4a29022d4292af2c6ede90deb
+    - 142f2d795c7ca7d4baeac402232529c4
+    - aa07481c28acf0342a68d6e204b0854e
+    - 6c5c9c7d9cfce364391d2fc3d0d71191
+    - bd6550f878e85254cad26fa9bd752f01
+    - 4861ddedd5eb9124aae4edcf413132d2
+    surfaceMaterials: 0000000000000000000000000000000000000000000000000000000000000000
