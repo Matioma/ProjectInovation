@@ -7,43 +7,38 @@ public class TriggerSound : MonoBehaviour
 {
     [Tooltip("Messages played on each consecutive enter in the Zone")]
     [SerializeField]
-    AudioSource[] audioSouces;
+    SoundController[] soundControllers;
 
     int currentSound = 0;
 
     [SerializeField]
     UnityEvent onEnterRoomEvent;
 
-    public void PlayNextSound() { 
-        if(audioSouces.Length <= 0)
+
+
+
+    public void PlayNextSound() {
+        if(soundControllers.Length <= 0)
         {
             return;
         }
-        if (currentSound >= audioSouces.Length) {
+        if (currentSound > soundControllers.Length-1) {
+            return;
+        }
+        if (soundControllers[currentSound].isPlaying)
+        {
             return;
         }
 
-        if (audioSouces[currentSound].isPlaying)
-        {
-            return;
+        //If the last sound repeat
+        if (currentSound == soundControllers.Length - 1) {
+            soundControllers[currentSound].Play();
         }
-        else {
+        else // Get the next sound
+        {
             currentSound++;
-            audioSouces[currentSound].Play();
+            soundControllers[currentSound].Play();
         }
-    }
-
-
-
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void OnTriggerEnter(Collider other)
