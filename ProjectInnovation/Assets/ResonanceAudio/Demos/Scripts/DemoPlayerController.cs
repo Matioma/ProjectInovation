@@ -37,7 +37,17 @@ public class DemoPlayerController : MonoBehaviour {
   // Camera rotation sensitivity.
   private const float sensitivity = 2.0f;
 
+    
   public bool canMove = false;
+
+
+    public void EnableMovement() {
+        canMove = true;
+    }
+    public void DisableMovement() {
+        canMove = false;
+    
+    }
 
   void Start() {
     characterController = GetComponent<CharacterController>();

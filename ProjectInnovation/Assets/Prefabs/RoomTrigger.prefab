@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8420537110955985266}
   - component: {fileID: 8420537110955985265}
   - component: {fileID: 8420537110955985267}
+  - component: {fileID: 6122454853404007953}
   m_Layer: 0
   m_Name: RoomTrigger
   m_TagString: Untagged
@@ -57,8 +58,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 990ced7363fc2f047a4472a1044bd7ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSouces:
-  - {fileID: 0}
+  soundControllers: []
   onEnterRoomEvent:
     m_PersistentCalls:
       m_Calls:
@@ -74,3 +74,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &6122454853404007953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420537110955985264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb2cdc0ea41fd1040b32da46a072439a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questIdentifier: 
+  onQuestComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  onQuestStart:
+    m_PersistentCalls:
+      m_Calls: []

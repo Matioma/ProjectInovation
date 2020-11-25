@@ -758,6 +758,81 @@ Transform:
   m_Father: {fileID: 1311015952}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &308057097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 308057098}
+  - component: {fileID: 308057099}
+  m_Layer: 0
+  m_Name: WaitQuest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &308057098
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308057097}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 961240034}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &308057099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308057097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 062da6c44daa2614fb22b5cd74316a54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questIdentifier: WaitInstructions
+  onQuestComplete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 388433103}
+        m_TargetAssemblyTypeName: DemoPlayerController, Assembly-CSharp
+        m_MethodName: EnableMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onQuestStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 388433103}
+        m_TargetAssemblyTypeName: DemoPlayerController, Assembly-CSharp
+        m_MethodName: DisableMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  timer: 5
 --- !u!1 &309191052
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,6 +997,17 @@ MonoBehaviour:
   proxyRoomCeiling: 0
   proxyRoomBackWall: 0
   proxyRoomFrontWall: 0
+--- !u!114 &388433103 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3912748216862350504, guid: 08c3c3fd4ae73e741a25a9408f902c78, type: 3}
+  m_PrefabInstance: {fileID: 534750869}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549bcd937d9264be5b34b1c113bef687, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &534750869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -931,7 +1017,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4020044984158459944, guid: 08c3c3fd4ae73e741a25a9408f902c78, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 116.407616
+      value: 116.23
       objectReference: {fileID: 0}
     - target: {fileID: 4020044984158459944, guid: 08c3c3fd4ae73e741a25a9408f902c78, type: 3}
       propertyPath: m_LocalPosition.y
@@ -939,7 +1025,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4020044984158459944, guid: 08c3c3fd4ae73e741a25a9408f902c78, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 25.322914
+      value: 36.37
       objectReference: {fileID: 0}
     - target: {fileID: 4020044984158459944, guid: 08c3c3fd4ae73e741a25a9408f902c78, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1921,6 +2007,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectedNodes: []
+--- !u!1 &961240033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 961240034}
+  m_Layer: 0
+  m_Name: Quests
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &961240034
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961240033}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 118.86827, y: -3.5923662, z: 20.214441}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 308057098}
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &988636805
 GameObject:
   m_ObjectHideFlags: 0
@@ -8873,7 +8990,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questList:
-  - {fileID: 1813901079}
+  - {fileID: 308057099}
 --- !u!1 &1812819362
 GameObject:
   m_ObjectHideFlags: 0
@@ -8969,41 +9086,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1812819362}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1813901078 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8420537110955985264, guid: bd5789cfb829c6e46adc566dc034b52b, type: 3}
-  m_PrefabInstance: {fileID: 8420537109160012428}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1813901079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1813901078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb2cdc0ea41fd1040b32da46a072439a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onQuestComplete:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 696599151}
-        m_TargetAssemblyTypeName: SoundController, Assembly-CSharp
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onQuestStart:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1861767954
 GameObject:
   m_ObjectHideFlags: 0
@@ -9805,11 +9887,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7721828960793584524, guid: 1329298f6d72c144cb20aeef89d79fec, type: 3}
       propertyPath: m_PlayOnAwake
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7721828960793584524, guid: 1329298f6d72c144cb20aeef89d79fec, type: 3}
+      propertyPath: Loop
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7721828960793584528, guid: 1329298f6d72c144cb20aeef89d79fec, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.5
+      value: -2.4
       objectReference: {fileID: 0}
     - target: {fileID: 7721828960793584528, guid: 1329298f6d72c144cb20aeef89d79fec, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9817,7 +9903,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7721828960793584528, guid: 1329298f6d72c144cb20aeef89d79fec, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.2
+      value: 13.8
       objectReference: {fileID: 0}
     - target: {fileID: 7721828960793584528, guid: 1329298f6d72c144cb20aeef89d79fec, type: 3}
       propertyPath: m_LocalRotation.x
@@ -9864,6 +9950,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6122454853404007953, guid: bd5789cfb829c6e46adc566dc034b52b, type: 3}
+      propertyPath: questIdentifier
+      value: Get To destination
+      objectReference: {fileID: 0}
     - target: {fileID: 8420537110955985264, guid: bd5789cfb829c6e46adc566dc034b52b, type: 3}
       propertyPath: m_Name
       value: RoomTrigger
@@ -9915,6 +10005,10 @@ PrefabInstance:
     - target: {fileID: 8420537110955985267, guid: bd5789cfb829c6e46adc566dc034b52b, type: 3}
       propertyPath: soundControllers.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8420537110955985267, guid: bd5789cfb829c6e46adc566dc034b52b, type: 3}
+      propertyPath: onEnterRoomEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8420537110955985267, guid: bd5789cfb829c6e46adc566dc034b52b, type: 3}
       propertyPath: audioSouces.Array.data[0]
