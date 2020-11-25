@@ -13,12 +13,18 @@ public class TargetSound : MonoBehaviour
     int loses=0;
 
 
+    monogmail gmail;
 
-
-    private void OnApplicationQuit()
+    private void Start()
     {
-        Debug.Log(wins + " / " + loses + " = " + ((float)wins)/((float)loses+wins)*100 + "%");
+       // gmail = GetComponent<monogmail>();
+       // Debug.Log(gmail.name);
     }
+
+    public string GetStats() {
+        return (wins + " / " + loses + " = " + ((float)wins) / ((float)loses + wins) * 100 + "%");
+    }
+
 
     // Update is called once per frame
     void Update()

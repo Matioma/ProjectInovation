@@ -36,9 +36,13 @@ public class SoundsPosition : MonoBehaviour
 
     public void UpdateSoundPosition() {
         if (currentSound >= positions.Count) {
+            FindObjectOfType<monogmail>().SendData(FindObjectOfType<TargetSound>().GetStats(), "DetectSoundDirection");
+
+
             #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
+                        UnityEditor.EditorApplication.isPlaying = false;
             #endif
+            Application.Quit();
             return;
         }
         Vector3 position = positions[currentSound];

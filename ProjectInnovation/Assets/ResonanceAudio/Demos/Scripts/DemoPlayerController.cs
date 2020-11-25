@@ -67,6 +67,7 @@ public class DemoPlayerController : MonoBehaviour {
     rotationX = Mathf.Clamp(rotationX, -clampAngleDegrees, clampAngleDegrees);
     mainCamera.transform.localRotation = Quaternion.Euler(rotationX, rotationY, 0.0f);
 
+
         if (canMove) {
             float movementX = Input.GetAxis("Horizontal");
             float movementY = Input.GetAxis("Vertical");
