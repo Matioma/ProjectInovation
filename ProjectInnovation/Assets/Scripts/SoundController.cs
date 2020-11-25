@@ -9,11 +9,7 @@ public class SoundController : MonoBehaviour
     [SerializeField]
     UnityEvent onSoundEnded;
 
-
     AudioSource audioSource;
-    //bool isPlaying;
-
-    bool wasPlaying = false;
     bool audioWasPlaying = false;
 
 
