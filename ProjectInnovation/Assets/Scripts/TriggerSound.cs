@@ -1,16 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class TriggerSound : MonoBehaviour
 {
+    [Tooltip("Messages played on each consecutive enter in the Zone")]
     [SerializeField]
     AudioSource[] audioSouces;
 
     int currentSound = 0;
 
+    [SerializeField]
+    UnityEvent onEnterRoomEvent;
 
-    void PlayNextSound() { 
+    public void PlayNextSound() { 
         if(audioSouces.Length <= 0)
         {
             return;
@@ -30,7 +34,7 @@ public class TriggerSound : MonoBehaviour
     }
 
 
-    // Start is called before the first frame update
+
     void Start()
     {
         
@@ -44,7 +48,6 @@ public class TriggerSound : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        PlayNextSound();
-        Debug.Log("Trigger!!");
+        onEnterRoomEvent?.Invoke();
     }
 }
