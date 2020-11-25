@@ -12,6 +12,7 @@ public class SoundRandom : Editor
 
         var t = (target as SoundsPosition);
 
+
         //DrawGizmo.
 
         //Gizmos.DrawCube(t.transform.position, t.start);

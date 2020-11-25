@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour
+public class VacumCleanerController : MonoBehaviour
 {
+    public bool isMoving;
 
-    [SerializeField]
-    List<Vector3> positions;
+    
+    public List<Vector3> positions;
     
     [SerializeField]
     float speed;
@@ -21,6 +22,14 @@ public class EnemyController : MonoBehaviour
     [SerializeField]
     float colliderRange;
 
+
+    public void EnableMoving() {
+        isMoving = true;
+    }
+    public void DisableMoving() {
+        isMoving = false;
+    }
+
     private void Start()
     {
         target = positions[targetIndex];
@@ -30,6 +39,9 @@ public class EnemyController : MonoBehaviour
 
     void Update()
     {
+        if (!isMoving) {
+            return;
+        }
         timer += Time.deltaTime;
         GoTo(target);
         if (ReachedTarget()) {

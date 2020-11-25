@@ -13,6 +13,11 @@ public class SoundController : MonoBehaviour
     bool audioWasPlaying = false;
 
 
+    public void PlatOneShot(AudioClip clip) {
+        audioSource.PlayOneShot(clip);
+    }
+
+
     private void SetPreviousAudioState(bool value)
     {
         if (isPlaying != audioWasPlaying)
