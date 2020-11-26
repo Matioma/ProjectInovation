@@ -14,15 +14,25 @@ public class ActivateObjectQuest : Quest
 
     [SerializeField]
     string phraseToRecongnize;
-    public void OnQuestComplete() {
-        if (inRange)
-        {
-            onActivateObject?.Invoke();
-            madeAction = true;
-        }
+
+    public Action voiceCommand;
+
+    private void Awake()
+    {
+        base.Awake();
+        voiceCommand += OnQuestComplete;
     }
 
-    string PhraseToRecongnize {
+    public void OnQuestComplete() {
+        //if (inRange)
+        //{
+            onActivateObject?.Invoke();
+            madeAction = true;
+        //}
+        Debug.Log(phraseToRecongnize);
+    }
+
+    public string PhraseToRecongnize {
         get { return phraseToRecongnize; }
     }
 
