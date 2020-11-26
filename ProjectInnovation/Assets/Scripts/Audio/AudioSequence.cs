@@ -47,7 +47,6 @@ public class AudioSequence : MonoBehaviour
             return;
         }
         sequnceStarted = true;
-        Debug.Log(audioClips[audioIndex]);
         GetComponent<AudioSource>().PlayOneShot(audioClips[audioIndex]);       
     }
 
