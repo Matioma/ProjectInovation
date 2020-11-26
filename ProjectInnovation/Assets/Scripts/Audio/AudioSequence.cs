@@ -8,6 +8,10 @@ using UnityEngine.Events;
 public class AudioSequence : MonoBehaviour
 {
     [SerializeField]
+    bool startOnAwake=false;
+
+
+    [SerializeField]
     List<AudioClip> audioClips;
 
 
@@ -32,7 +36,9 @@ public class AudioSequence : MonoBehaviour
     private void Start()
     {
         audio = GetComponent<AudioSource>();
-        Debug.Log(audioClips.Count);
+        if (startOnAwake) {
+            StartSequence();
+        }
     }
 
     public void StartSequence()
@@ -41,7 +47,6 @@ public class AudioSequence : MonoBehaviour
             return;
         }
         sequnceStarted = true;
-        Debug.Log(audioClips[audioIndex]);
         GetComponent<AudioSource>().PlayOneShot(audioClips[audioIndex]);       
     }
 

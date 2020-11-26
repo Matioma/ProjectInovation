@@ -168,7 +168,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8785392055060332404, guid: be29914d4360df74d87b1ec8e4f2a85e, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8785392055060332404, guid: be29914d4360df74d87b1ec8e4f2a85e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -412,11 +412,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a8b2a9fc2779d242b2e19a2bf510301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!82 &60208349 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 7721828960793584524, guid: 1329298f6d72c144cb20aeef89d79fec, type: 3}
-  m_PrefabInstance: {fileID: 60208346}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &67239433
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,7 +641,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &149433024
 GameObject:
@@ -1253,100 +1248,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 549bcd937d9264be5b34b1c113bef687, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!82 &443903219 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 7721828960793584524, guid: 1329298f6d72c144cb20aeef89d79fec, type: 3}
-  m_PrefabInstance: {fileID: 1814707245}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &487458088
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6199887553770841889, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
-      propertyPath: onActivateObject.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199887553770841889, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
-      propertyPath: user
-      value: 
-      objectReference: {fileID: 388433102}
-    - target: {fileID: 6199887553770841889, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
-      propertyPath: onActivateObject.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199887553770841889, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
-      propertyPath: onActivateObject.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199887553770841889, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
-      propertyPath: onActivateObject.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 443903219}
-    - target: {fileID: 6199887553770841889, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
-      propertyPath: onActivateObject.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.AudioSource, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199887553770841889, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
-      propertyPath: onActivateObject.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Play
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199887553770841889, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
-      propertyPath: onActivateObject.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199887553770841894, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
-      propertyPath: m_Name
-      value: ActivateObjectQuest
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199887553770841895, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 123.14046
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199887553770841895, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 10.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199887553770841895, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 3.8823738
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199887553770841895, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199887553770841895, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199887553770841895, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199887553770841895, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199887553770841895, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199887553770841895, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199887553770841895, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199887553770841895, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
 --- !u!1001 &534750869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1384,7 +1285,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4020044984158459944, guid: 08c3c3fd4ae73e741a25a9408f902c78, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4020044984158459944, guid: 08c3c3fd4ae73e741a25a9408f902c78, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1660,7 +1561,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!4 &696599150 stripped
 Transform:
@@ -1728,7 +1629,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &699406259
 MonoBehaviour:
@@ -1806,7 +1707,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &725619602
 GameObject:
@@ -1900,7 +1801,7 @@ RectTransform:
   m_Children:
   - {fileID: 727228665}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2784,7 +2685,7 @@ Transform:
   - {fileID: 869371322}
   - {fileID: 1662176474}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &988636805
 GameObject:
@@ -3008,7 +2909,7 @@ Transform:
   - {fileID: 1814707246}
   - {fileID: 1187273674}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1084808890
 GameObject:
@@ -3622,7 +3523,7 @@ Transform:
   - {fileID: 848779991}
   - {fileID: 1482505030}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1221712755
 MonoBehaviour:
@@ -8848,7 +8749,7 @@ Transform:
   - {fileID: 945202605}
   - {fileID: 1116551420}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1320118418
 GameObject:
@@ -9888,7 +9789,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1662176473}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eeb3f3f090b925e4dbc9a6ab547a0d61, type: 3}
   m_Name: 
@@ -9909,10 +9810,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: AudioSequence, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onQuestComplete:
     m_PersistentCalls:
       m_Calls: []
-  audioToWait: {fileID: 60208349}
+  audioToWait: {fileID: 1796795278}
 --- !u!1 &1732258654
 GameObject:
   m_ObjectHideFlags: 0
@@ -9986,7 +9899,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1760434237
 MonoBehaviour:
@@ -10024,6 +9937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96f004ed6acbe6f499109df566324a66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startOnAwake: 0
   audioClips:
   - {fileID: 8300000, guid: 187f3676149694364858bfcf8273c523, type: 3}
   - {fileID: 8300000, guid: df160f2b97dd94d5bbd28a63d257177f, type: 3}
@@ -11443,7 +11357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8420537110955985266, guid: bd5789cfb829c6e46adc566dc034b52b, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8420537110955985266, guid: bd5789cfb829c6e46adc566dc034b52b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
