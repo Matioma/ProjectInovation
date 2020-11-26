@@ -39,6 +39,7 @@ public class SoundController : MonoBehaviour
 
     public void Play() {
         audioSource.Play();
+     
     }
 
 
