@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -8,6 +9,23 @@ public class ActivateObjectQuest : Quest
 {
     [SerializeField]
     KeyCode keyAction;
+
+
+
+    [SerializeField]
+    string phraseToRecongnize;
+    public void OnQuestComplete() {
+        if (inRange)
+        {
+            onActivateObject?.Invoke();
+            madeAction = true;
+        }
+    }
+
+    string PhraseToRecongnize {
+        get { return phraseToRecongnize; }
+    }
+
 
     [SerializeField]
     GameObject user;
@@ -37,12 +55,25 @@ public class ActivateObjectQuest : Quest
         }
     }
 
+    public void IsDone() {
+
+        madeAction = true;
+    }
+
+
     public override bool CheckCondition()
     {
-        if (Input.GetKeyDown(keyAction) && inRange) {
+        if (Input.GetKeyDown(keyAction) && inRange)
+        {
             onActivateObject?.Invoke();
             madeAction = true;
         }
+
+        //if (OnQuestComplete() && inRange)
+        //{
+        //    onActivateObject?.Invoke();
+        //    madeAction = true;
+        //}
         return madeAction;
     }
 }
