@@ -6,15 +6,13 @@ public class VacumCleanerController : MonoBehaviour
 {
     public bool isMoving;
 
-    
     public List<Vector3> positions;
 
 
     [SerializeField]
     float speed;
 
-    int targetIndex =0;
-
+    int targetIndex =1;
     Vector3 target;
 
 
@@ -31,8 +29,14 @@ public class VacumCleanerController : MonoBehaviour
         isMoving = false;
     }
 
+    private void Awake()
+    {
+    }
+
+
     private void Start()
     {
+        transform.position = positions[0];
         target = positions[targetIndex];
         timer = 0;
     }
@@ -44,7 +48,7 @@ public class VacumCleanerController : MonoBehaviour
             return;
         }
         timer += Time.deltaTime;
-        GoTo(target + transform.position);
+        GoTo(target);
         if (ReachedTarget()) {
             getNextTarget();
         }
@@ -70,13 +74,13 @@ public class VacumCleanerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.GetComponent<DemoPlayerController>()) {
-            Debug.Log("Time to catch the vacum cleaner" + timer);
-            #if UNITY_EDITOR
-                UnityEditor.EditorApplication.isPlaying = false;
-            #endif
-            return;
-        }
+        //if (collision.gameObject.GetComponent<DemoPlayerController>()) {
+        //    Debug.Log("Time to catch the vacum cleaner" + timer);
+        //    #if UNITY_EDITOR
+        //        UnityEditor.EditorApplication.isPlaying = false;
+        //    #endif
+        //    return;
+        //}
     }
 
 }
