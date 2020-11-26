@@ -8,7 +8,8 @@ public class VacumCleanerController : MonoBehaviour
 
     
     public List<Vector3> positions;
-    
+
+
     [SerializeField]
     float speed;
 
@@ -43,7 +44,7 @@ public class VacumCleanerController : MonoBehaviour
             return;
         }
         timer += Time.deltaTime;
-        GoTo(target);
+        GoTo(target + transform.position);
         if (ReachedTarget()) {
             getNextTarget();
         }
