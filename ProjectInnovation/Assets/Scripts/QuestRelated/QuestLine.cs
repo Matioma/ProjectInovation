@@ -48,7 +48,6 @@ public class QuestLine : MonoBehaviour
         CheckQuestCondition();
     }
 
-
     private void CheckQuestCondition() {
         if (questList == null || questList.Count <= 0)
         {
@@ -60,11 +59,5 @@ public class QuestLine : MonoBehaviour
             questList[activQuest].onQuestComplete?.Invoke();
             ActivateNextQuest();
         }
-
     }
-
-    
-
-
-
 }
