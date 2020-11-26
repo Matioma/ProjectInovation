@@ -69,11 +69,6 @@ public class ActivateObjectQuest : Quest
             madeAction = true;
         }
 
-        //if (OnQuestComplete() && inRange)
-        //{
-        //    onActivateObject?.Invoke();
-        //    madeAction = true;
-        //}
         return madeAction;
     }
 }
