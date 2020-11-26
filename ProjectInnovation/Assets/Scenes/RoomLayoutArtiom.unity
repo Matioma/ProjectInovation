@@ -324,6 +324,10 @@ PrefabInstance:
       propertyPath: MaxDistance
       value: 31.12
       objectReference: {fileID: 0}
+    - target: {fileID: 7721828960793584524, guid: 1329298f6d72c144cb20aeef89d79fec, type: 3}
+      propertyPath: BypassReverbZones
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7721828960793584527, guid: 1329298f6d72c144cb20aeef89d79fec, type: 3}
       propertyPath: listenerDirectivityAlpha
       value: 0.782
@@ -342,7 +346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7721828960793584528, guid: 1329298f6d72c144cb20aeef89d79fec, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.5
+      value: -3.9
       objectReference: {fileID: 0}
     - target: {fileID: 7721828960793584528, guid: 1329298f6d72c144cb20aeef89d79fec, type: 3}
       propertyPath: m_LocalPosition.y
@@ -350,7 +354,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7721828960793584528, guid: 1329298f6d72c144cb20aeef89d79fec, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 17.9
+      value: -2.6
       objectReference: {fileID: 0}
     - target: {fileID: 7721828960793584528, guid: 1329298f6d72c144cb20aeef89d79fec, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2293,17 +2297,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6199887553770841895, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
   m_PrefabInstance: {fileID: 836620640}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &836620642 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6199887553770841889, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
-  m_PrefabInstance: {fileID: 836620640}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74c124da775d74b438d11edada5dc3dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &848779990
 GameObject:
   m_ObjectHideFlags: 0
@@ -2500,17 +2493,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 23172330}
---- !u!114 &869371325 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6199887553770841889, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
-  m_PrefabInstance: {fileID: 869371321}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 869371323}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74c124da775d74b438d11edada5dc3dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &889819167
 GameObject:
   m_ObjectHideFlags: 0
@@ -9798,18 +9780,6 @@ MonoBehaviour:
   onQuestStart:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1796795278}
-        m_TargetAssemblyTypeName: AudioSequence, Assembly-CSharp
-        m_MethodName: StartSequence
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AudioSequence, Assembly-CSharp
         m_MethodName: 
@@ -9914,12 +9884,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questList:
-  - {fileID: 1662176475}
   - {fileID: 176909511}
   - {fileID: 1883368125}
-  - {fileID: 836620642}
-  - {fileID: 869371325}
-  - {fileID: 869371325}
 --- !u!1 &1796795273 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7721828960793584531, guid: 1329298f6d72c144cb20aeef89d79fec, type: 3}
@@ -9940,8 +9906,8 @@ MonoBehaviour:
   startOnAwake: 0
   audioClips:
   - {fileID: 8300000, guid: 187f3676149694364858bfcf8273c523, type: 3}
-  - {fileID: 8300000, guid: df160f2b97dd94d5bbd28a63d257177f, type: 3}
   - {fileID: 8300000, guid: 00557151c7e56e544840a8d40abaddbd, type: 3}
+  - {fileID: 8300000, guid: 187f3676149694364858bfcf8273c523, type: 3}
   onSequenceStart:
     m_PersistentCalls:
       m_Calls: []
@@ -11210,9 +11176,65 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6583759464586266091, guid: 23e944d1a3a8f5d44ab41e2a71247fcd, type: 3}
+      propertyPath: onQuestComplete.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583759464586266091, guid: 23e944d1a3a8f5d44ab41e2a71247fcd, type: 3}
+      propertyPath: onQuestStart.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583759464586266091, guid: 23e944d1a3a8f5d44ab41e2a71247fcd, type: 3}
       propertyPath: user
       value: 
       objectReference: {fileID: 388433102}
+    - target: {fileID: 6583759464586266091, guid: 23e944d1a3a8f5d44ab41e2a71247fcd, type: 3}
+      propertyPath: onQuestComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583759464586266091, guid: 23e944d1a3a8f5d44ab41e2a71247fcd, type: 3}
+      propertyPath: onQuestComplete.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583759464586266091, guid: 23e944d1a3a8f5d44ab41e2a71247fcd, type: 3}
+      propertyPath: onQuestComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1796795278}
+    - target: {fileID: 6583759464586266091, guid: 23e944d1a3a8f5d44ab41e2a71247fcd, type: 3}
+      propertyPath: onQuestComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AudioSequence, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583759464586266091, guid: 23e944d1a3a8f5d44ab41e2a71247fcd, type: 3}
+      propertyPath: onQuestComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StopSequence
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583759464586266091, guid: 23e944d1a3a8f5d44ab41e2a71247fcd, type: 3}
+      propertyPath: onQuestComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583759464586266091, guid: 23e944d1a3a8f5d44ab41e2a71247fcd, type: 3}
+      propertyPath: onQuestStart.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583759464586266091, guid: 23e944d1a3a8f5d44ab41e2a71247fcd, type: 3}
+      propertyPath: onQuestStart.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583759464586266091, guid: 23e944d1a3a8f5d44ab41e2a71247fcd, type: 3}
+      propertyPath: onQuestStart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1796795278}
+    - target: {fileID: 6583759464586266091, guid: 23e944d1a3a8f5d44ab41e2a71247fcd, type: 3}
+      propertyPath: onQuestStart.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AudioSequence, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583759464586266091, guid: 23e944d1a3a8f5d44ab41e2a71247fcd, type: 3}
+      propertyPath: onQuestStart.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartSequence
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583759464586266091, guid: 23e944d1a3a8f5d44ab41e2a71247fcd, type: 3}
+      propertyPath: onQuestStart.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23e944d1a3a8f5d44ab41e2a71247fcd, type: 3}
 --- !u!1001 &7721828960415883774
