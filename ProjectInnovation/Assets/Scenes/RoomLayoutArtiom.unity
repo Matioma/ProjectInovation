@@ -412,11 +412,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a8b2a9fc2779d242b2e19a2bf510301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!82 &60208349 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 7721828960793584524, guid: 1329298f6d72c144cb20aeef89d79fec, type: 3}
-  m_PrefabInstance: {fileID: 60208346}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &67239433
 GameObject:
   m_ObjectHideFlags: 0
@@ -9912,7 +9907,7 @@ MonoBehaviour:
   onQuestComplete:
     m_PersistentCalls:
       m_Calls: []
-  audioToWait: {fileID: 60208349}
+  audioToWait: {fileID: 1796795278}
 --- !u!1 &1732258654
 GameObject:
   m_ObjectHideFlags: 0

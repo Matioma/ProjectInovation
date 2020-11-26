@@ -5,12 +5,11 @@ using UnityEngine;
 public class WaitUntilSoundEndsQuest : Quest
 {
     [SerializeField]
-    AudioSource audioToWait;
+    AudioSequence audioToWait;
 
     void Awake()
     {
         base.Awake();
-        //onQuestStart.AddListener(Message);
     }
 
 
@@ -19,13 +18,9 @@ public class WaitUntilSoundEndsQuest : Quest
        
     }
 
-
-    public void Message() {
-        audioToWait.Play();
-    }
-
     public override bool CheckCondition()
     {
-        return false;
+        return audioToWait.SequenceEnded;
+        
     }
 }
