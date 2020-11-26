@@ -8,9 +8,9 @@ public abstract class Quest : MonoBehaviour, IQuest
     [SerializeField]
     string questIdentifier;
 
-
-    public UnityEvent onQuestComplete;
     public UnityEvent onQuestStart;
+    public UnityEvent onQuestComplete;
+    
 
 
     protected void MessageStart() {
