@@ -15,22 +15,24 @@ public class VoiceCommand : MonoBehaviour
     {
         //actions.Add("can you help me", Help);
         //actions.Add("give directions", Directions);
-        //actions.Add("main menu", MainMenu);
+         actions.Add("main menu", MainMenu);
         //actions.Add("quit", Quit);
         //actions.Add("are you here", AreYouHere);
+        // actions.Add("hello", AreYouHere);
 
         foreach (var ActivateObject in FindObjectsOfType<ActivateObjectQuest>())
         {
 
-           
+
             try
             {
                 actions.Add(ActivateObject.KeyPhrase, ActivateObject.onPhraseHeardAction);
             }
-            catch (Exception err) {
+            catch (Exception err)
+            {
                 Debug.LogWarning(err);
             }
-           
+
         }
 
         Debug.Log(actions.Count);
@@ -41,6 +43,7 @@ public class VoiceCommand : MonoBehaviour
         keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += RecognizedSpeech;
         keywordRecognizer.Start();
+        Debug.Log("voice start");
     }
 
     private void RecognizedSpeech(PhraseRecognizedEventArgs speeech)

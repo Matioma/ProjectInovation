@@ -2276,6 +2276,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 549bcd937d9264be5b34b1c113bef687, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &388433108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388433102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 007f46cc98ab4ea48b3b9d8f94d66a54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &389428388
 GameObject:
   m_ObjectHideFlags: 0
@@ -2516,6 +2528,7 @@ MonoBehaviour:
       m_Calls: []
   keyAction: 0
   user: {fileID: 0}
+  keyPhrase: 
   rangeIsImportant: 0
   onActivateObject:
     m_PersistentCalls:
@@ -4872,6 +4885,7 @@ MonoBehaviour:
       m_Calls: []
   keyAction: 0
   user: {fileID: 0}
+  keyPhrase: 
   rangeIsImportant: 0
   onActivateObject:
     m_PersistentCalls:
@@ -5620,6 +5634,7 @@ MonoBehaviour:
         m_CallState: 2
   keyAction: 102
   user: {fileID: 388433102}
+  keyPhrase: 
   rangeIsImportant: 0
   onActivateObject:
     m_PersistentCalls:
@@ -5898,6 +5913,7 @@ MonoBehaviour:
         m_CallState: 2
   keyAction: 102
   user: {fileID: 388433102}
+  keyPhrase: 
   rangeIsImportant: 0
   onActivateObject:
     m_PersistentCalls:
@@ -11646,6 +11662,10 @@ PrefabInstance:
       propertyPath: onQuestComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 6199887553770841889, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
+      propertyPath: keyPhrase
+      value: hello
+      objectReference: {fileID: 0}
     - target: {fileID: 6199887553770841894, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
       propertyPath: m_Name
       value: SayOkQuest
@@ -13974,6 +13994,7 @@ MonoBehaviour:
         m_CallState: 2
   keyAction: 102
   user: {fileID: 388433102}
+  keyPhrase: 
   rangeIsImportant: 0
   onActivateObject:
     m_PersistentCalls:
@@ -15033,6 +15054,7 @@ MonoBehaviour:
       m_Calls: []
   keyAction: 0
   user: {fileID: 0}
+  keyPhrase: 
   rangeIsImportant: 0
   onActivateObject:
     m_PersistentCalls:
@@ -16049,6 +16071,7 @@ MonoBehaviour:
         m_CallState: 2
   keyAction: 102
   user: {fileID: 388433102}
+  keyPhrase: 
   rangeIsImportant: 0
   onActivateObject:
     m_PersistentCalls:

@@ -35,15 +35,17 @@ public class ActivateObjectQuest : Quest
 
     private void Awake()
     {
+        base.Awake();
         onPhraseHeardAction += OnPhraseHeard;
     }
 
     private void OnPhraseHeard() {
+        Debug.Log("keyPhrase");
         if (rangeIsImportant)
         {
             madeAction = true;
         }
-        Debug.Log("Test");
+        
     }
 
 
