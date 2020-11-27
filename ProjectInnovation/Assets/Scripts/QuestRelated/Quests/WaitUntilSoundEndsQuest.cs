@@ -5,7 +5,7 @@ using UnityEngine;
 public class WaitUntilSoundEndsQuest : Quest
 {
     [SerializeField]
-    AudioSequence audioToWait;
+    AudioSource audioToWait;
 
     void Awake()
     {
@@ -20,7 +20,7 @@ public class WaitUntilSoundEndsQuest : Quest
 
     public override bool CheckCondition()
     {
-        return audioToWait.SequenceEnded;
+        return audioToWait.isPlaying;
         
     }
 }
