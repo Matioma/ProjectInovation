@@ -15,6 +15,10 @@ public class ActivateObjectQuest : Quest
     bool inRange = false;
     bool madeAction = false;
 
+
+    [SerializeField]
+    bool rangeIsImportant = false;
+
     [Header ("Quest specific events")]
     public UnityEvent onActivateObject;
     public UnityEvent onGetInRange;
@@ -39,7 +43,11 @@ public class ActivateObjectQuest : Quest
 
     public override bool CheckCondition()
     {
-        if (Input.GetKeyDown(keyAction) && inRange) {
+        if (rangeIsImportant) {
+            if (!inRange) return false;
+        }
+
+        if (Input.GetKeyDown(keyAction)) {
             onActivateObject?.Invoke();
             madeAction = true;
         }
