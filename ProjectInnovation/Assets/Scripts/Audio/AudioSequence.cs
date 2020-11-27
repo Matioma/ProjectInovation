@@ -17,7 +17,12 @@ public class AudioSequence : MonoBehaviour
 
 
     int audioIndex =0;
+
+    [SerializeField]
+    bool playAsSequence = false;
+
     bool sequnceStarted = false;
+
 
     bool sequenceEnded = false;
     public bool SequenceEnded
@@ -64,6 +69,28 @@ public class AudioSequence : MonoBehaviour
 
 
     private void PlayNextAudio() {
+        if (playAsSequence) {
+            if (audioIndex < audioClips.Count - 1)
+            {
+                audioIndex++;
+                audio.PlayOneShot(audioClips[audioIndex]);
+
+                //if (audioIndex == 1)
+                //{
+                //    audio.clip = audioClips[audioIndex];
+                //    audio.loop = true;
+                //    audio.Play();
+                //}
+            }
+            else
+            {
+                sequenceEnded = true;
+                onSequenceEnd?.Invoke();
+            }
+            return;
+        }
+
+
         if (audioIndex < audioClips.Count - 1)
         {
             audioIndex++;
