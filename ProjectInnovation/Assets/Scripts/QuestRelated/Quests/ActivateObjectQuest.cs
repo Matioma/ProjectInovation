@@ -17,6 +17,9 @@ public class ActivateObjectQuest : Quest
 
     public Action voiceCommand;
 
+    [SerializeField]
+    bool shouldBeInARange = false;
+
     private void Awake()
     {
         base.Awake();
@@ -24,11 +27,14 @@ public class ActivateObjectQuest : Quest
     }
 
     public void OnQuestComplete() {
-        //if (inRange)
-        //{
-            onActivateObject?.Invoke();
-            madeAction = true;
-        //}
+        if (shouldBeInARange) {
+            if (!inRange) return;
+        }
+        
+
+        onActivateObject?.Invoke();
+        madeAction = true;
+        
         Debug.Log(phraseToRecongnize);
     }
 
@@ -73,12 +79,15 @@ public class ActivateObjectQuest : Quest
 
     public override bool CheckCondition()
     {
-        if (Input.GetKeyDown(keyAction) && inRange)
+        if (shouldBeInARange) {
+            if (!inRange) { return false; }
+        }
+
+        if (Input.GetKeyDown(keyAction))
         {
             onActivateObject?.Invoke();
             madeAction = true;
         }
-
         return madeAction;
     }
 }
