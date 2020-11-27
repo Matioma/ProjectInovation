@@ -123,6 +123,157 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &7028275
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7028278}
+  - component: {fileID: 7028277}
+  - component: {fileID: 7028276}
+  m_Layer: 0
+  m_Name: street ambience
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &7028276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7028275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5e1719799ca4f9b9f5db81449517ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bypassRoomEffects: 0
+  directivityAlpha: 0
+  directivitySharpness: 1
+  listenerDirectivityAlpha: 0
+  listenerDirectivitySharpness: 1
+  gainDb: 0
+  nearFieldEffectEnabled: 0
+  nearFieldEffectGain: 1
+  occlusionEnabled: 1
+  occlusionIntensity: 1
+  quality: 2
+--- !u!82 &7028277
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7028275}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 248799cb4acba48f7b3ee842a80f788c, type: 2}
+  m_audioClip: {fileID: 8300000, guid: a5072573da48b27488843a4347738b70, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 1
+  SpatializePostEffects: 1
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 42.65255
+  MaxDistance: 91.541
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &7028278
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7028275}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 163.0312, y: -22.58736, z: 33.279007}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &23172327
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1075,15 +1226,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rt60s:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  - 0.3863458
+  - 0.38621718
+  - 0.38486394
+  - 0.38586372
+  - 0.38303143
+  - 0.38114348
+  - 0.38194677
+  - 0.38397986
+  - 0.37702012
   reverbGainDb: 0
   reverbBrightness: 0
   reverbTime: 1
@@ -1091,15 +1242,15 @@ MonoBehaviour:
   boxRegionSize: {x: 24.9, y: 8.4, z: 46}
   sphereRegionRadius: 6.8
   onlyApplyWhenVisible: 1
-  proxyRoomPosition: {x: 0, y: 0, z: 0}
+  proxyRoomPosition: {x: 116.797516, y: 4.190081, z: 11.649732}
   proxyRoomRotation: {x: 0, y: 0, z: 0, w: 1}
-  proxyRoomSize: {x: 0, y: 0, z: 0}
-  proxyRoomLeftWall: 0
-  proxyRoomRightWall: 0
-  proxyRoomFloor: 0
-  proxyRoomCeiling: 0
-  proxyRoomBackWall: 0
-  proxyRoomFrontWall: 0
+  proxyRoomSize: {x: 13.171893, y: 13.171893, z: 13.171893}
+  proxyRoomLeftWall: 4
+  proxyRoomRightWall: 22
+  proxyRoomFloor: 4
+  proxyRoomCeiling: 1
+  proxyRoomBackWall: 4
+  proxyRoomFrontWall: 1
 --- !u!1 &173582385
 GameObject:
   m_ObjectHideFlags: 0
@@ -1491,15 +1642,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rt60s:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  - 0.36281887
+  - 0.36285672
+  - 0.36137715
+  - 0.36286455
+  - 0.35988772
+  - 0.3563103
+  - 0.3571278
+  - 0.36075485
+  - 0.3470676
   reverbGainDb: 0
   reverbBrightness: 0
   reverbTime: 1
@@ -1507,15 +1658,15 @@ MonoBehaviour:
   boxRegionSize: {x: 1, y: 1, z: 1}
   sphereRegionRadius: 4.79
   onlyApplyWhenVisible: 1
-  proxyRoomPosition: {x: 0, y: 0, z: 0}
+  proxyRoomPosition: {x: 106.56124, y: 4.1118565, z: 28.494785}
   proxyRoomRotation: {x: 0, y: 0, z: 0, w: 1}
-  proxyRoomSize: {x: 0, y: 0, z: 0}
-  proxyRoomLeftWall: 0
-  proxyRoomRightWall: 0
-  proxyRoomFloor: 0
-  proxyRoomCeiling: 0
-  proxyRoomBackWall: 0
-  proxyRoomFrontWall: 0
+  proxyRoomSize: {x: 12.590936, y: 12.590936, z: 12.590936}
+  proxyRoomLeftWall: 4
+  proxyRoomRightWall: 4
+  proxyRoomFloor: 5
+  proxyRoomCeiling: 1
+  proxyRoomBackWall: 21
+  proxyRoomFrontWall: 21
 --- !u!1 &388433102 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4025809275696691304, guid: 08c3c3fd4ae73e741a25a9408f902c78, type: 3}
@@ -1781,6 +1932,101 @@ MonoBehaviour:
   onLeaveRange:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &471268589
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 471268593}
+  - component: {fileID: 471268592}
+  - component: {fileID: 471268591}
+  - component: {fileID: 471268590}
+  m_Layer: 0
+  m_Name: roof
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &471268590
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471268589}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &471268591
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471268589}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 6c5c9c7d9cfce364391d2fc3d0d71191, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &471268592
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471268589}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &471268593
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471268589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 109.5, y: 9, z: 11.710172}
+  m_LocalScale: {x: 90.955284, y: 1, z: 68.73955}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &534750869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2196,15 +2442,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rt60s:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  - 0.44928798
+  - 0.44849154
+  - 0.44497958
+  - 0.44825837
+  - 0.4411108
+  - 0.43540347
+  - 0.43761873
+  - 0.4430031
+  - 0.41986212
   reverbGainDb: 0
   reverbBrightness: 0
   reverbTime: 1
@@ -2212,15 +2458,15 @@ MonoBehaviour:
   boxRegionSize: {x: 20.7, y: 10.2, z: 1}
   sphereRegionRadius: 1
   onlyApplyWhenVisible: 1
-  proxyRoomPosition: {x: 0, y: 0, z: 0}
+  proxyRoomPosition: {x: 94.49959, y: 3.8161523, z: 27.915976}
   proxyRoomRotation: {x: 0, y: 0, z: 0, w: 1}
-  proxyRoomSize: {x: 0, y: 0, z: 0}
-  proxyRoomLeftWall: 0
-  proxyRoomRightWall: 0
-  proxyRoomFloor: 0
-  proxyRoomCeiling: 0
-  proxyRoomBackWall: 0
-  proxyRoomFrontWall: 0
+  proxyRoomSize: {x: 11.624255, y: 11.624255, z: 11.624255}
+  proxyRoomLeftWall: 4
+  proxyRoomRightWall: 22
+  proxyRoomFloor: 5
+  proxyRoomCeiling: 1
+  proxyRoomBackWall: 21
+  proxyRoomFrontWall: 5
 --- !u!1 &618955602
 GameObject:
   m_ObjectHideFlags: 0
@@ -3411,15 +3657,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rt60s:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  - 0.35154563
+  - 0.35153544
+  - 0.3515161
+  - 0.35230687
+  - 0.35232478
+  - 0.35149887
+  - 0.35232478
+  - 0.35230687
+  - 0.35130864
   reverbGainDb: 0
   reverbBrightness: 0
   reverbTime: 1
@@ -3427,15 +3673,15 @@ MonoBehaviour:
   boxRegionSize: {x: 27.61, y: 8.4, z: 34.14}
   sphereRegionRadius: 4.79
   onlyApplyWhenVisible: 1
-  proxyRoomPosition: {x: 0, y: 0, z: 0}
+  proxyRoomPosition: {x: 135.97697, y: 7.616872, z: 21.22919}
   proxyRoomRotation: {x: 0, y: 0, z: 0, w: 1}
-  proxyRoomSize: {x: 0, y: 0, z: 0}
-  proxyRoomLeftWall: 0
-  proxyRoomRightWall: 0
+  proxyRoomSize: {x: 13.249415, y: 13.249415, z: 13.249415}
+  proxyRoomLeftWall: 1
+  proxyRoomRightWall: 1
   proxyRoomFloor: 0
-  proxyRoomCeiling: 0
-  proxyRoomBackWall: 0
-  proxyRoomFrontWall: 0
+  proxyRoomCeiling: 1
+  proxyRoomBackWall: 4
+  proxyRoomFrontWall: 4
 --- !u!1001 &836620640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4970,15 +5216,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rt60s:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  - 0.4375852
+  - 0.43758652
+  - 0.43723673
+  - 0.43678695
+  - 0.43551075
+  - 0.43576854
+  - 0.43625152
+  - 0.43664515
+  - 0.4335881
   reverbGainDb: 0
   reverbBrightness: 0
   reverbTime: 1
@@ -4986,15 +5232,15 @@ MonoBehaviour:
   boxRegionSize: {x: 20.84, y: 8.4, z: 34.14}
   sphereRegionRadius: 4.79
   onlyApplyWhenVisible: 1
-  proxyRoomPosition: {x: 0, y: 0, z: 0}
+  proxyRoomPosition: {x: 116.50753, y: 7.3831577, z: 27.170738}
   proxyRoomRotation: {x: 0, y: 0, z: 0, w: 1}
-  proxyRoomSize: {x: 0, y: 0, z: 0}
-  proxyRoomLeftWall: 0
-  proxyRoomRightWall: 0
+  proxyRoomSize: {x: 15.16711, y: 15.16711, z: 15.16711}
+  proxyRoomLeftWall: 4
+  proxyRoomRightWall: 4
   proxyRoomFloor: 0
-  proxyRoomCeiling: 0
-  proxyRoomBackWall: 0
-  proxyRoomFrontWall: 0
+  proxyRoomCeiling: 1
+  proxyRoomBackWall: 1
+  proxyRoomFrontWall: 1
 --- !u!1 &1309644194
 GameObject:
   m_ObjectHideFlags: 0
@@ -10476,15 +10722,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rt60s:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  - 0.33304584
+  - 0.33328524
+  - 0.33221737
+  - 0.3374602
+  - 0.3328688
+  - 0.33132562
+  - 0.33504725
+  - 0.3367053
+  - 0.32574242
   reverbGainDb: 0
   reverbBrightness: 0
   reverbTime: 1
@@ -10492,15 +10738,15 @@ MonoBehaviour:
   boxRegionSize: {x: 27.61, y: 8.4, z: 34.14}
   sphereRegionRadius: 4.79
   onlyApplyWhenVisible: 1
-  proxyRoomPosition: {x: 0, y: 0, z: 0}
+  proxyRoomPosition: {x: 125.91099, y: 4.446379, z: 20.689573}
   proxyRoomRotation: {x: 0, y: 0, z: 0, w: 1}
-  proxyRoomSize: {x: 0, y: 0, z: 0}
-  proxyRoomLeftWall: 0
-  proxyRoomRightWall: 0
-  proxyRoomFloor: 0
-  proxyRoomCeiling: 0
-  proxyRoomBackWall: 0
-  proxyRoomFrontWall: 0
+  proxyRoomSize: {x: 12.996299, y: 12.996299, z: 12.996299}
+  proxyRoomLeftWall: 4
+  proxyRoomRightWall: 1
+  proxyRoomFloor: 21
+  proxyRoomCeiling: 1
+  proxyRoomBackWall: 22
+  proxyRoomFrontWall: 22
 --- !u!1 &1354001015
 GameObject:
   m_ObjectHideFlags: 0
@@ -10693,15 +10939,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rt60s:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  - 0.4099474
+  - 0.40985075
+  - 0.4096371
+  - 0.40953776
+  - 0.40921035
+  - 0.40818685
+  - 0.40920272
+  - 0.40953046
+  - 0.40735444
   reverbGainDb: 0
   reverbBrightness: 0
   reverbTime: 1
@@ -10709,15 +10955,15 @@ MonoBehaviour:
   boxRegionSize: {x: 24.9, y: 8.4, z: 46}
   sphereRegionRadius: 4.79
   onlyApplyWhenVisible: 1
-  proxyRoomPosition: {x: 0, y: 0, z: 0}
+  proxyRoomPosition: {x: 116.99843, y: 7.156474, z: -1.872376}
   proxyRoomRotation: {x: 0, y: 0, z: 0, w: 1}
-  proxyRoomSize: {x: 0, y: 0, z: 0}
-  proxyRoomLeftWall: 0
-  proxyRoomRightWall: 0
+  proxyRoomSize: {x: 14.533248, y: 14.533248, z: 14.533248}
+  proxyRoomLeftWall: 4
+  proxyRoomRightWall: 4
   proxyRoomFloor: 0
-  proxyRoomCeiling: 0
-  proxyRoomBackWall: 0
-  proxyRoomFrontWall: 0
+  proxyRoomCeiling: 1
+  proxyRoomBackWall: 1
+  proxyRoomFrontWall: 1
 --- !u!1 &1471186904
 GameObject:
   m_ObjectHideFlags: 0
@@ -12618,7 +12864,7 @@ GameObject:
   - component: {fileID: 1951882131}
   - component: {fileID: 1951882130}
   m_Layer: 0
-  m_Name: roomtone bathroom
+  m_Name: roomtone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12656,12 +12902,12 @@ AudioSource:
   m_GameObject: {fileID: 1951882129}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 248799cb4acba48f7b3ee842a80f788c, type: 2}
   m_audioClip: {fileID: 8300000, guid: 99cf8be2b9a170a4b8a0e8ae911aa4c2, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -12813,8 +13059,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1951882129}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.94, y: 0.169, z: -0.05}
-  m_LocalScale: {x: 11.634886, y: 8.2965, z: 12.049616}
+  m_LocalPosition: {x: 4.66, y: 0.169, z: -5.1}
+  m_LocalScale: {x: 30.620876, y: 10.699167, z: 69.90613}
   m_Children:
   - {fileID: 926890668}
   m_Father: {fileID: 1320118422}
