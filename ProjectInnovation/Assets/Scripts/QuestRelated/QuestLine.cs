@@ -9,9 +9,6 @@ public class QuestLine : MonoBehaviour
 
 
     int activQuest = 0;
-    bool questLineFinished = false;
-
-
     private void Awake()
     {
         ActivateQuest(activQuest);
@@ -28,7 +25,6 @@ public class QuestLine : MonoBehaviour
         }
         else
         {
-            questLineFinished = true;
             Debug.Log("quest list Completed");
         }
     }
@@ -48,8 +44,7 @@ public class QuestLine : MonoBehaviour
 
     private void Update()
     {
-        if(!questLineFinished)
-            CheckQuestCondition();
+        CheckQuestCondition();
     }
 
     private void CheckQuestCondition() {
