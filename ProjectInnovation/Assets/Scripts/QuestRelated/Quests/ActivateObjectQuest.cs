@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -15,6 +16,13 @@ public class ActivateObjectQuest : Quest
     bool inRange = false;
     bool madeAction = false;
 
+    [SerializeField]
+    string keyPhrase;
+    public string KeyPhrase {
+        get { return keyPhrase; }
+    }
+
+    public Action onPhraseHeardAction;
 
     [SerializeField]
     bool rangeIsImportant = false;
@@ -23,6 +31,22 @@ public class ActivateObjectQuest : Quest
     public UnityEvent onActivateObject;
     public UnityEvent onGetInRange;
     public UnityEvent onLeaveRange;
+
+
+    private void Awake()
+    {
+        onPhraseHeardAction += OnPhraseHeard;
+    }
+
+    private void OnPhraseHeard() {
+        if (rangeIsImportant)
+        {
+            madeAction = true;
+        }
+        Debug.Log("Test");
+    }
+
+
 
     private void OnTriggerEnter(Collider other)
     {

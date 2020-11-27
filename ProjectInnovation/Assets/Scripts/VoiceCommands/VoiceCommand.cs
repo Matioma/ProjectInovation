@@ -13,18 +13,34 @@ public class VoiceCommand : MonoBehaviour
 
     private void Start()
     {
-        actions.Add("can you help me", Help);
-        actions.Add("give directions", Directions);
-        actions.Add("main menu", MainMenu);
-        actions.Add("quit", Quit);
-        actions.Add("are you here", AreYouHere);
+        //actions.Add("can you help me", Help);
+        //actions.Add("give directions", Directions);
+        //actions.Add("main menu", MainMenu);
+        //actions.Add("quit", Quit);
+        //actions.Add("are you here", AreYouHere);
 
+        foreach (var ActivateObject in FindObjectsOfType<ActivateObjectQuest>())
+        {
+
+           
+            try
+            {
+                actions.Add(ActivateObject.KeyPhrase, ActivateObject.onPhraseHeardAction);
+            }
+            catch (Exception err) {
+                Debug.LogWarning(err);
+            }
+           
+        }
+
+        Debug.Log(actions.Count);
+        foreach (var key in actions.Keys)
+        {
+            Debug.Log(key);
+        }
         keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += RecognizedSpeech;
         keywordRecognizer.Start();
-
-
-
     }
 
     private void RecognizedSpeech(PhraseRecognizedEventArgs speeech)
