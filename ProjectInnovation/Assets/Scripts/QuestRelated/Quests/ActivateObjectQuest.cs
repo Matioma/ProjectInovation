@@ -40,12 +40,12 @@ public class ActivateObjectQuest : Quest
     }
 
     private void OnPhraseHeard() {
-        Debug.Log("keyPhrase");
         if (rangeIsImportant)
         {
-            madeAction = true;
+            if (!inRange) return;
         }
-        
+
+        madeAction = true;
     }
 
 

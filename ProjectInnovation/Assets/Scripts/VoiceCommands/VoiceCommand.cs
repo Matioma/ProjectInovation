@@ -23,10 +23,14 @@ public class VoiceCommand : MonoBehaviour
         foreach (var ActivateObject in FindObjectsOfType<ActivateObjectQuest>())
         {
 
+            if (ActivateObject.KeyPhrase != "") {
+                actions.Add(ActivateObject.KeyPhrase, ActivateObject.onPhraseHeardAction);
+            }
 
             try
             {
-                actions.Add(ActivateObject.KeyPhrase, ActivateObject.onPhraseHeardAction);
+
+                
             }
             catch (Exception err)
             {
