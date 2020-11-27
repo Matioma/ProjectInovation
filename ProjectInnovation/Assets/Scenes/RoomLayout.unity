@@ -799,7 +799,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &82693845
 Transform:
   m_ObjectHideFlags: 0
@@ -1087,6 +1087,101 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &138876420
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 138876424}
+  - component: {fileID: 138876423}
+  - component: {fileID: 138876422}
+  - component: {fileID: 138876421}
+  m_Layer: 0
+  m_Name: Floor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &138876421
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138876420}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &138876422
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138876420}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 6c5c9c7d9cfce364391d2fc3d0d71191, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &138876423
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138876420}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &138876424
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138876420}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 109.5, y: -0.97, z: 11.710172}
+  m_LocalScale: {x: 72.44854, y: 1, z: 68.73955}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &149433024
 GameObject:
   m_ObjectHideFlags: 0
@@ -1226,15 +1321,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rt60s:
-  - 0.3863458
-  - 0.38621718
-  - 0.38486394
-  - 0.38586372
-  - 0.38303143
-  - 0.38114348
-  - 0.38194677
-  - 0.38397986
-  - 0.37702012
+  - 0.38385767
+  - 0.38372174
+  - 0.3834012
+  - 0.38349417
+  - 0.38045245
+  - 0.37874338
+  - 0.37959763
+  - 0.38186458
+  - 0.3749937
   reverbGainDb: 0
   reverbBrightness: 0
   reverbTime: 1
@@ -1242,9 +1337,9 @@ MonoBehaviour:
   boxRegionSize: {x: 24.9, y: 8.4, z: 46}
   sphereRegionRadius: 6.8
   onlyApplyWhenVisible: 1
-  proxyRoomPosition: {x: 116.797516, y: 4.190081, z: 11.649732}
+  proxyRoomPosition: {x: 116.80352, y: 4.2015257, z: 11.649273}
   proxyRoomRotation: {x: 0, y: 0, z: 0, w: 1}
-  proxyRoomSize: {x: 13.171893, y: 13.171893, z: 13.171893}
+  proxyRoomSize: {x: 13.170283, y: 13.170283, z: 13.170283}
   proxyRoomLeftWall: 4
   proxyRoomRightWall: 22
   proxyRoomFloor: 4
@@ -1642,15 +1737,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rt60s:
-  - 0.36281887
-  - 0.36285672
-  - 0.36137715
-  - 0.36286455
-  - 0.35988772
-  - 0.3563103
-  - 0.3571278
-  - 0.36075485
-  - 0.3470676
+  - 0.3812919
+  - 0.38132462
+  - 0.38015565
+  - 0.3829432
+  - 0.3805864
+  - 0.37477767
+  - 0.3759114
+  - 0.37952107
+  - 0.36276314
   reverbGainDb: 0
   reverbBrightness: 0
   reverbTime: 1
@@ -1658,9 +1753,9 @@ MonoBehaviour:
   boxRegionSize: {x: 1, y: 1, z: 1}
   sphereRegionRadius: 4.79
   onlyApplyWhenVisible: 1
-  proxyRoomPosition: {x: 106.56124, y: 4.1118565, z: 28.494785}
+  proxyRoomPosition: {x: 106.55803, y: 4.1138663, z: 28.501472}
   proxyRoomRotation: {x: 0, y: 0, z: 0, w: 1}
-  proxyRoomSize: {x: 12.590936, y: 12.590936, z: 12.590936}
+  proxyRoomSize: {x: 12.5851, y: 12.5851, z: 12.5851}
   proxyRoomLeftWall: 4
   proxyRoomRightWall: 4
   proxyRoomFloor: 5
@@ -1945,7 +2040,7 @@ GameObject:
   - component: {fileID: 471268591}
   - component: {fileID: 471268590}
   m_Layer: 0
-  m_Name: roof
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2022,7 +2117,7 @@ Transform:
   m_GameObject: {fileID: 471268589}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 109.5, y: 9, z: 11.710172}
-  m_LocalScale: {x: 90.955284, y: 1, z: 68.73955}
+  m_LocalScale: {x: 75.52245, y: 1, z: 68.73955}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 15
@@ -2442,15 +2537,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rt60s:
-  - 0.44928798
-  - 0.44849154
-  - 0.44497958
-  - 0.44825837
-  - 0.4411108
-  - 0.43540347
-  - 0.43761873
-  - 0.4430031
-  - 0.41986212
+  - 0.43749297
+  - 0.43743402
+  - 0.43548784
+  - 0.4366886
+  - 0.432498
+  - 0.42729557
+  - 0.42833483
+  - 0.434146
+  - 0.41581443
   reverbGainDb: 0
   reverbBrightness: 0
   reverbTime: 1
@@ -2458,11 +2553,11 @@ MonoBehaviour:
   boxRegionSize: {x: 20.7, y: 10.2, z: 1}
   sphereRegionRadius: 1
   onlyApplyWhenVisible: 1
-  proxyRoomPosition: {x: 94.49959, y: 3.8161523, z: 27.915976}
+  proxyRoomPosition: {x: 94.49341, y: 3.8155258, z: 27.913473}
   proxyRoomRotation: {x: 0, y: 0, z: 0, w: 1}
-  proxyRoomSize: {x: 11.624255, y: 11.624255, z: 11.624255}
+  proxyRoomSize: {x: 11.61864, y: 11.61864, z: 11.61864}
   proxyRoomLeftWall: 4
-  proxyRoomRightWall: 22
+  proxyRoomRightWall: 4
   proxyRoomFloor: 5
   proxyRoomCeiling: 1
   proxyRoomBackWall: 21
@@ -3657,15 +3752,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rt60s:
-  - 0.35154563
-  - 0.35153544
-  - 0.3515161
-  - 0.35230687
-  - 0.35232478
-  - 0.35149887
-  - 0.35232478
-  - 0.35230687
-  - 0.35130864
+  - 0.35539234
+  - 0.3553831
+  - 0.3553649
+  - 0.35500318
+  - 0.35457963
+  - 0.35453367
+  - 0.35457963
+  - 0.35479036
+  - 0.35482585
   reverbGainDb: 0
   reverbBrightness: 0
   reverbTime: 1
@@ -3673,9 +3768,9 @@ MonoBehaviour:
   boxRegionSize: {x: 27.61, y: 8.4, z: 34.14}
   sphereRegionRadius: 4.79
   onlyApplyWhenVisible: 1
-  proxyRoomPosition: {x: 135.97697, y: 7.616872, z: 21.22919}
+  proxyRoomPosition: {x: 135.96901, y: 7.6253424, z: 21.219805}
   proxyRoomRotation: {x: 0, y: 0, z: 0, w: 1}
-  proxyRoomSize: {x: 13.249415, y: 13.249415, z: 13.249415}
+  proxyRoomSize: {x: 13.238557, y: 13.238557, z: 13.238557}
   proxyRoomLeftWall: 1
   proxyRoomRightWall: 1
   proxyRoomFloor: 0
@@ -5216,15 +5311,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rt60s:
-  - 0.4375852
-  - 0.43758652
-  - 0.43723673
-  - 0.43678695
-  - 0.43551075
-  - 0.43576854
-  - 0.43625152
-  - 0.43664515
-  - 0.4335881
+  - 0.43519166
+  - 0.43513948
+  - 0.4349815
+  - 0.4349656
+  - 0.43220285
+  - 0.43193737
+  - 0.43194634
+  - 0.43458924
+  - 0.4305937
   reverbGainDb: 0
   reverbBrightness: 0
   reverbTime: 1
@@ -5232,9 +5327,9 @@ MonoBehaviour:
   boxRegionSize: {x: 20.84, y: 8.4, z: 34.14}
   sphereRegionRadius: 4.79
   onlyApplyWhenVisible: 1
-  proxyRoomPosition: {x: 116.50753, y: 7.3831577, z: 27.170738}
+  proxyRoomPosition: {x: 116.524796, y: 7.375001, z: 27.233316}
   proxyRoomRotation: {x: 0, y: 0, z: 0, w: 1}
-  proxyRoomSize: {x: 15.16711, y: 15.16711, z: 15.16711}
+  proxyRoomSize: {x: 15.179145, y: 15.179145, z: 15.179145}
   proxyRoomLeftWall: 4
   proxyRoomRightWall: 4
   proxyRoomFloor: 0
@@ -10722,15 +10817,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rt60s:
-  - 0.33304584
-  - 0.33328524
-  - 0.33221737
-  - 0.3374602
-  - 0.3328688
-  - 0.33132562
-  - 0.33504725
-  - 0.3367053
-  - 0.32574242
+  - 0.3366372
+  - 0.33679017
+  - 0.3368471
+  - 0.3418776
+  - 0.34109193
+  - 0.3398895
+  - 0.33987233
+  - 0.34124228
+  - 0.3318683
   reverbGainDb: 0
   reverbBrightness: 0
   reverbTime: 1
@@ -10738,9 +10833,9 @@ MonoBehaviour:
   boxRegionSize: {x: 27.61, y: 8.4, z: 34.14}
   sphereRegionRadius: 4.79
   onlyApplyWhenVisible: 1
-  proxyRoomPosition: {x: 125.91099, y: 4.446379, z: 20.689573}
+  proxyRoomPosition: {x: 125.93924, y: 4.454688, z: 20.701103}
   proxyRoomRotation: {x: 0, y: 0, z: 0, w: 1}
-  proxyRoomSize: {x: 12.996299, y: 12.996299, z: 12.996299}
+  proxyRoomSize: {x: 12.976576, y: 12.976576, z: 12.976576}
   proxyRoomLeftWall: 4
   proxyRoomRightWall: 1
   proxyRoomFloor: 21
@@ -10939,15 +11034,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rt60s:
-  - 0.4099474
-  - 0.40985075
-  - 0.4096371
-  - 0.40953776
-  - 0.40921035
-  - 0.40818685
-  - 0.40920272
-  - 0.40953046
-  - 0.40735444
+  - 0.34736285
+  - 0.34727198
+  - 0.3470802
+  - 0.34666288
+  - 0.3459567
+  - 0.3463036
+  - 0.34595013
+  - 0.34675038
+  - 0.345673
   reverbGainDb: 0
   reverbBrightness: 0
   reverbTime: 1
@@ -10955,9 +11050,9 @@ MonoBehaviour:
   boxRegionSize: {x: 24.9, y: 8.4, z: 46}
   sphereRegionRadius: 4.79
   onlyApplyWhenVisible: 1
-  proxyRoomPosition: {x: 116.99843, y: 7.156474, z: -1.872376}
+  proxyRoomPosition: {x: 116.97935, y: 7.164347, z: -1.8751838}
   proxyRoomRotation: {x: 0, y: 0, z: 0, w: 1}
-  proxyRoomSize: {x: 14.533248, y: 14.533248, z: 14.533248}
+  proxyRoomSize: {x: 14.524442, y: 14.524442, z: 14.524442}
   proxyRoomLeftWall: 4
   proxyRoomRightWall: 4
   proxyRoomFloor: 0

@@ -9,7 +9,6 @@ public class QuestLine : MonoBehaviour
 
 
     int activQuest = 0;
-
     private void Awake()
     {
         ActivateQuest(activQuest);
