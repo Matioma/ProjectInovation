@@ -23,9 +23,11 @@ public class VacumCleanerController : MonoBehaviour
 
 
     public void EnableMoving() {
+        Debug.Log("Enabled Vacum Cleaner");
         isMoving = true;
     }
     public void DisableMoving() {
+        Debug.Log("Stopped vacum cleaner");
         isMoving = false;
     }
 

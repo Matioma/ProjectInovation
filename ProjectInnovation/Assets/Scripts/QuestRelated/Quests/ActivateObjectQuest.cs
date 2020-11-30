@@ -47,7 +47,10 @@ public class ActivateObjectQuest : Quest
         {
             if (!inRange) return;
         }
+
+        onActivateObject?.Invoke();
         madeAction = true;
+        questIsActive = false;
     }
 
 
