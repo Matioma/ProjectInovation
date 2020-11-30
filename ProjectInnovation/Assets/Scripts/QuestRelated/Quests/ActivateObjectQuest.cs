@@ -18,6 +18,9 @@ public class ActivateObjectQuest : Quest
 
     [SerializeField]
     string keyPhrase;
+
+
+    bool questIsActive = false;
     public string KeyPhrase {
         get { return keyPhrase; }
     }
@@ -44,7 +47,6 @@ public class ActivateObjectQuest : Quest
         {
             if (!inRange) return;
         }
-
         madeAction = true;
     }
 
@@ -52,23 +54,29 @@ public class ActivateObjectQuest : Quest
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == user)
-        {
-            onGetInRange?.Invoke();
-            inRange = true;
+        if (questIsActive) {
+            if (other.gameObject == user)
+            {
+                onGetInRange?.Invoke();
+                inRange = true;
+            }
         }
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject == user)
-        {
-            onLeaveRange?.Invoke();
-            inRange = false;
+        if (questIsActive) {
+            if (other.gameObject == user)
+            {
+                onLeaveRange?.Invoke();
+                inRange = false;
+            }
         }
+          
     }
 
     public override bool CheckCondition()
     {
+        questIsActive = true;
         if (rangeIsImportant) {
             if (!inRange) return false;
         }
@@ -76,6 +84,7 @@ public class ActivateObjectQuest : Quest
         if (Input.GetKeyDown(keyAction)) {
             onActivateObject?.Invoke();
             madeAction = true;
+            questIsActive = false;
         }
         return madeAction;
     }
