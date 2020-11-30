@@ -39,11 +39,11 @@ public class VoiceCommand : MonoBehaviour
 
         }
 
-        Debug.Log(actions.Count);
-        foreach (var key in actions.Keys)
-        {
-            Debug.Log(key);
-        }
+        //Debug.Log(actions.Count);
+        //foreach (var key in actions.Keys)
+        //{
+        //    Debug.Log(key);
+        //}
         keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += RecognizedSpeech;
         keywordRecognizer.Start();

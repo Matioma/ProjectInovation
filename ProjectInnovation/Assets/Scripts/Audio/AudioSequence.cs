@@ -48,7 +48,6 @@ public class AudioSequence : MonoBehaviour
 
     public void StartSequence()
     {
-        Debug.Log("Started");
         if (audioClips == null || audioClips.Count <= 0) {
             return;
         }
