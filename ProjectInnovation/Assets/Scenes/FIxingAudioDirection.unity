@@ -19784,7 +19784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startOnAwake: 0
   audioClips:
-  - {fileID: 8300000, guid: 339d469beef1e8040b5d72fb87dc851e, type: 3}
+  - {fileID: 8300000, guid: 70436e28dbf1ccc4384a5fbf34c864ba, type: 3}
   playAsSequence: 1
   onSequenceStart:
     m_PersistentCalls:
