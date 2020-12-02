@@ -91,9 +91,6 @@ public class DemoPlayerController : MonoBehaviour {
         timer += Time.deltaTime;
 
         if (canMove) {
-
-
-
             float movementX = Input.GetAxis("Horizontal");
             float movementY = Input.GetAxis("Vertical");
             Vector3 movementDirection = new Vector3(movementX, 0.0f, movementY);
@@ -107,12 +104,7 @@ public class DemoPlayerController : MonoBehaviour {
             }
             characterController.SimpleMove(movementSpeed * movementDirection.normalized);
         }
-
     }
-
-
-    
-
 
   // Sets the cursor lock for first-person control.
   private void SetCursorLock(bool lockCursor) {
