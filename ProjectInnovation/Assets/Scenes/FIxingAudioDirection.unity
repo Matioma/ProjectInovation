@@ -14801,12 +14801,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96f004ed6acbe6f499109df566324a66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startOnAwake: 1
+  startOnAwake: 0
   audioClips:
   - {fileID: 8300000, guid: 456e64535a0bf744388ca4c9db6e7a74, type: 3}
   - {fileID: 8300000, guid: c652c5bb4f90bc442bf796ca9053af2a, type: 3}
   - {fileID: 8300000, guid: d7fc379c43f99cd4987adc75b27e635b, type: 3}
-  playAsSequence: 1
+  playAsSequence: 0
   onSequenceStart:
     m_PersistentCalls:
       m_Calls: []
@@ -14823,8 +14823,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 248799cb4acba48f7b3ee842a80f788c, type: 2}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 456e64535a0bf744388ca4c9db6e7a74, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -14929,7 +14929,7 @@ MonoBehaviour:
   gainDb: 0
   nearFieldEffectEnabled: 0
   nearFieldEffectGain: 1
-  occlusionEnabled: 0
+  occlusionEnabled: 1
   occlusionIntensity: 1
   quality: 2
 --- !u!1 &2048305842

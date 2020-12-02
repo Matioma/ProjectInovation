@@ -41,6 +41,8 @@ public class AudioSequence : MonoBehaviour
     private void Start()
     {
         audio = GetComponent<AudioSource>();
+        audio.Play();
+        audio.Stop();
         if (startOnAwake) {
             StartSequence();
         }
@@ -53,8 +55,15 @@ public class AudioSequence : MonoBehaviour
         }
         sequnceStarted = true;
         onSequenceStart?.Invoke();
-        GetComponent<AudioSource>().PlayOneShot(audioClips[audioIndex]);       
+        PlayClip();
+        //GetComponent<AudioSource>().PlayOneShot(audioClips[audioIndex]);       
     }
+
+    public void PlayClip() {
+        GetComponent<AudioSource>().clip = audioClips[audioIndex];
+        GetComponent<AudioSource>().Play();
+    }
+
 
     public void StopSequence() {
         audio.Stop();
