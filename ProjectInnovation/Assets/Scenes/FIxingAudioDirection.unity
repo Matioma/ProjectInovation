@@ -178,6 +178,7 @@ MonoBehaviour:
   - {fileID: 1810487475}
   - {fileID: 481256785}
   - {fileID: 1899824107}
+  - {fileID: 2064897577}
 --- !u!1001 &10852247
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1613,7 +1614,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6819082155118385256, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: m_Name
-      value: WaitInsturctions
+      value: In Kitchen
       objectReference: {fileID: 0}
     - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: onQuestStart.m_PersistentCalls.m_Calls.Array.size
@@ -1621,7 +1622,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: onQuestComplete.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: onQuestStart.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -1634,7 +1635,7 @@ PrefabInstance:
     - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: audioToWait
       value: 
-      objectReference: {fileID: 1755273653}
+      objectReference: {fileID: 1353134094}
     - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: questIdentifier
       value: Wait call to kitchen
@@ -1662,7 +1663,7 @@ PrefabInstance:
     - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: onQuestStart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1755273653}
+      objectReference: {fileID: 1353134094}
     - target: {fileID: 6819082155118385259, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.8429947
@@ -10560,8 +10561,8 @@ AudioSource:
   SpatializePostEffects: 1
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1.9
-  MaxDistance: 84.3
+  MinDistance: 5
+  MaxDistance: 30.54
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -15126,6 +15127,17 @@ Transform:
   m_Father: {fileID: 1522240699}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2064897577 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
+  m_PrefabInstance: {fileID: 407527153}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeb3f3f090b925e4dbc9a6ab547a0d61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2074707555
 PrefabInstance:
   m_ObjectHideFlags: 0
