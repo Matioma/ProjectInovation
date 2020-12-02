@@ -5632,11 +5632,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: onQuestStart.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: 
+      value: AudioSequence, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: onQuestStart.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: StartSequence
       objectReference: {fileID: 0}
     - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: audioToWait
@@ -5664,12 +5664,12 @@ PrefabInstance:
       objectReference: {fileID: 1598874662}
     - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: onQuestStart.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: 
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: onQuestStart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 166183674}
+      objectReference: {fileID: 166183676}
     - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: onQuestComplete.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: AudioSequence, Assembly-CSharp
