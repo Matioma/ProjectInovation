@@ -44,6 +44,8 @@ public class AudioSequence : MonoBehaviour
     private void Awake()
     {
         initialVolume = GetComponent<AudioSource>().volume;
+        Debug.Log("Initial volume should be " + GetComponent<AudioSource>().volume);
+
     }
 
     private void Start()
