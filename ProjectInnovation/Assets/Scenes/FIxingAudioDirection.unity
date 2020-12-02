@@ -1058,6 +1058,7 @@ MonoBehaviour:
   onSequenceEnd:
     m_PersistentCalls:
       m_Calls: []
+  initialVolume: 0
 --- !u!114 &188693433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2140,7 +2141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6199887553770841889, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
       propertyPath: onActivateObject.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6199887553770841889, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
       propertyPath: onActivateObject.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -2900,7 +2901,7 @@ PrefabInstance:
     - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: onQuestComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1299479299}
+      objectReference: {fileID: 0}
     - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: onQuestStart.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
@@ -4193,6 +4194,7 @@ MonoBehaviour:
   onSequenceEnd:
     m_PersistentCalls:
       m_Calls: []
+  initialVolume: 0
 --- !u!114 &878521082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5745,7 +5747,7 @@ PrefabInstance:
     - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: onQuestComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1299479299}
+      objectReference: {fileID: 0}
     - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: onQuestStart.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
@@ -10983,7 +10985,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96f004ed6acbe6f499109df566324a66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startOnAwake: 1
+  startOnAwake: 0
   audioClips:
   - {fileID: 8300000, guid: 999496ac0f30b8b43bf6dd9a57b584bb, type: 3}
   - {fileID: 8300000, guid: 9b621f84fa390dd41960bc79b8f51d83, type: 3}
@@ -10995,6 +10997,7 @@ MonoBehaviour:
   onSequenceEnd:
     m_PersistentCalls:
       m_Calls: []
+  initialVolume: 0
 --- !u!114 &1299479300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11268,6 +11271,7 @@ MonoBehaviour:
   onSequenceEnd:
     m_PersistentCalls:
       m_Calls: []
+  initialVolume: 0
 --- !u!114 &1324964011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11791,6 +11795,7 @@ MonoBehaviour:
   onSequenceEnd:
     m_PersistentCalls:
       m_Calls: []
+  initialVolume: 0
 --- !u!114 &1353134095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14093,6 +14098,7 @@ MonoBehaviour:
   onSequenceEnd:
     m_PersistentCalls:
       m_Calls: []
+  initialVolume: 0
 --- !u!114 &1755273654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14879,6 +14885,7 @@ MonoBehaviour:
   onSequenceEnd:
     m_PersistentCalls:
       m_Calls: []
+  initialVolume: 0
 --- !u!114 &1876064271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15054,6 +15061,7 @@ MonoBehaviour:
   onSequenceEnd:
     m_PersistentCalls:
       m_Calls: []
+  initialVolume: 0
 --- !u!114 &1884002141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15133,7 +15141,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -15758,6 +15766,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ActivateCoffeMachine
       objectReference: {fileID: 0}
+    - target: {fileID: 6199887553770841894, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6199887553770841895, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.17
@@ -16090,6 +16102,7 @@ MonoBehaviour:
   onSequenceEnd:
     m_PersistentCalls:
       m_Calls: []
+  initialVolume: 0
 --- !u!82 &2013714705
 AudioSource:
   m_ObjectHideFlags: 0

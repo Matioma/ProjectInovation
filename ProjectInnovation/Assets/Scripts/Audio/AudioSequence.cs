@@ -37,19 +37,34 @@ public class AudioSequence : MonoBehaviour
 
     AudioSource audio;
 
-    
+
+    public float initialVolume=0;
+
+
+    private void Awake()
+    {
+        initialVolume = GetComponent<AudioSource>().volume;
+    }
+
     private void Start()
     {
         audio = GetComponent<AudioSource>();
+        
         audio.Play();
-        audio.Stop();
+        audio.volume = 0;
+
+        //audio.Stop();
         if (startOnAwake) {
+            
             StartSequence();
         }
     }
 
     public void StartSequence()
     {
+        GetComponent<AudioSource>().Stop();
+        Debug.Log(initialVolume);
+        GetComponent<AudioSource>().volume =GetComponent<AudioSequence>().initialVolume;
         if (audioClips == null || audioClips.Count <= 0) {
             return;
         }
