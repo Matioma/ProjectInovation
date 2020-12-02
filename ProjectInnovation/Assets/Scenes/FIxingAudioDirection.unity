@@ -5193,6 +5193,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007f46cc98ab4ea48b3b9d8f94d66a54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &985142745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985142740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2484925224e79ce45941ff628e79c5f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LeftStepSource: {fileID: 1723169103}
+  RightStepSource: {fileID: 1396424569}
+  audioFiles:
+  - {fileID: 8300000, guid: f84c64c317a3bcc419c4bb3b386fdfb2, type: 3}
+  - {fileID: 8300000, guid: e5d5b303163ae81458ff714266bcc2db, type: 3}
+  - {fileID: 8300000, guid: 0394f8863a5cb0c46b2b1cf3ef440860, type: 3}
+  - {fileID: 8300000, guid: 9575f3eb18ad0fe46a1d7aab72316b6a, type: 3}
+  timeBetweenSteps: 0.5
 --- !u!1001 &1007701105
 PrefabInstance:
   m_ObjectHideFlags: 0
