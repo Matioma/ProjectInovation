@@ -44,7 +44,7 @@ public class AudioSequence : MonoBehaviour
     private void Awake()
     {
         initialVolume = GetComponent<AudioSource>().volume;
-        Debug.Log("Initial volume should be " + GetComponent<AudioSource>().volume);
+        //Debug.Log("Initial volume should be " + GetComponent<AudioSource>().volume);
 
     }
 
@@ -65,7 +65,7 @@ public class AudioSequence : MonoBehaviour
     public void StartSequence()
     {
         GetComponent<AudioSource>().Stop();
-        Debug.Log(initialVolume);
+        //Debug.Log(initialVolume);
         GetComponent<AudioSource>().volume =GetComponent<AudioSequence>().initialVolume;
         if (audioClips == null || audioClips.Count <= 0) {
             return;
@@ -90,7 +90,7 @@ public class AudioSequence : MonoBehaviour
         audio.loop = false;
 
         audio.Play();
-        Debug.Log(audio.isPlaying);
+        //Debug.Log(audio.isPlaying);
     }
 
 

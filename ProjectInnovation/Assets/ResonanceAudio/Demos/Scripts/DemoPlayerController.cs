@@ -41,6 +41,9 @@ public class DemoPlayerController : MonoBehaviour {
   public bool canMove = false;
 
 
+
+    
+
     public void EnableMovement() {
         canMove = true;
     }
