@@ -69,9 +69,16 @@ public class VacumCleanerController : MonoBehaviour
     }
 
     void getNextTarget() {
+        if (targetIndex >= positions.Count - 1)
+        {
+            return;
+        }
+
         targetIndex++;
         int arrayIndex = targetIndex % positions.Count;
-        target = positions[arrayIndex];
+        
+        
+        target = positions[targetIndex];
     }
 
     private void OnCollisionEnter(Collision collision)

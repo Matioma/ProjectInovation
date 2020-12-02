@@ -86,11 +86,11 @@ public class AudioSequence : MonoBehaviour
     public void StopSequence() {
         audio.Stop();
 
-        audio.clip = audioClips[2];
-        audio.loop = false;
-
-        audio.Play();
-        //Debug.Log(audio.isPlaying);
+        if (!playAsSequence) {
+            audio.clip = audioClips[2];
+            audio.loop = false;
+            audio.Play();
+        }
     }
 
 

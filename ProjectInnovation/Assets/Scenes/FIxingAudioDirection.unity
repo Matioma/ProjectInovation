@@ -17895,6 +17895,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.51474595
       objectReference: {fileID: 0}
+    - target: {fileID: 8785392055060332410, guid: be29914d4360df74d87b1ec8e4f2a85e, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8785392055060332410, guid: be29914d4360df74d87b1ec8e4f2a85e, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8785392055060332411, guid: be29914d4360df74d87b1ec8e4f2a85e, type: 3}
       propertyPath: positions.Array.size
       value: 4
@@ -17905,7 +17913,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8785392055060332411, guid: be29914d4360df74d87b1ec8e4f2a85e, type: 3}
       propertyPath: positions.Array.data[0].y
-      value: 1.21
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8785392055060332411, guid: be29914d4360df74d87b1ec8e4f2a85e, type: 3}
       propertyPath: positions.Array.data[0].z
@@ -17917,7 +17925,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8785392055060332411, guid: be29914d4360df74d87b1ec8e4f2a85e, type: 3}
       propertyPath: positions.Array.data[1].y
-      value: 1.21
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8785392055060332411, guid: be29914d4360df74d87b1ec8e4f2a85e, type: 3}
       propertyPath: positions.Array.data[1].z
@@ -17929,7 +17937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8785392055060332411, guid: be29914d4360df74d87b1ec8e4f2a85e, type: 3}
       propertyPath: positions.Array.data[2].y
-      value: 1.21
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8785392055060332411, guid: be29914d4360df74d87b1ec8e4f2a85e, type: 3}
       propertyPath: positions.Array.data[2].z
@@ -17941,7 +17949,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8785392055060332411, guid: be29914d4360df74d87b1ec8e4f2a85e, type: 3}
       propertyPath: positions.Array.data[3].y
-      value: 1.21
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8785392055060332411, guid: be29914d4360df74d87b1ec8e4f2a85e, type: 3}
       propertyPath: positions.Array.data[3].z
