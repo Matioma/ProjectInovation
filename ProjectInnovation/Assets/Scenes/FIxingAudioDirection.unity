@@ -185,6 +185,7 @@ MonoBehaviour:
   - {fileID: 452877732}
   - {fileID: 1267969748}
   - {fileID: 710918839}
+  - {fileID: 814072528}
 --- !u!1001 &10852247
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1376,6 +1377,40 @@ MonoBehaviour:
   proxyRoomCeiling: 1
   proxyRoomBackWall: 1
   proxyRoomFrontWall: 1
+--- !u!1 &243742985
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 243742986}
+  m_Layer: 0
+  m_Name: Reverb Zones
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &243742986
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243742985}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 112, y: 0, z: 21.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1940349232}
+  - {fileID: 1356475911}
+  - {fileID: 400980789}
+  - {fileID: 1146058414}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &250869646
 GameObject:
   m_ObjectHideFlags: 0
@@ -1811,7 +1846,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6583759464586266090, guid: 23e944d1a3a8f5d44ab41e2a71247fcd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.27
+      value: 4.54
       objectReference: {fileID: 0}
     - target: {fileID: 6583759464586266090, guid: 23e944d1a3a8f5d44ab41e2a71247fcd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1855,7 +1890,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6583759464586266091, guid: 23e944d1a3a8f5d44ab41e2a71247fcd, type: 3}
       propertyPath: onQuestComplete.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6583759464586266091, guid: 23e944d1a3a8f5d44ab41e2a71247fcd, type: 3}
       propertyPath: user
@@ -1896,7 +1931,7 @@ PrefabInstance:
     - target: {fileID: 6583759464586266091, guid: 23e944d1a3a8f5d44ab41e2a71247fcd, type: 3}
       propertyPath: onQuestComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2013714704}
+      objectReference: {fileID: 1263631162}
     - target: {fileID: 6583759464586266091, guid: 23e944d1a3a8f5d44ab41e2a71247fcd, type: 3}
       propertyPath: onQuestComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: AudioSequence, Assembly-CSharp
@@ -1909,6 +1944,10 @@ PrefabInstance:
       propertyPath: onQuestComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 6583759464586266091, guid: 23e944d1a3a8f5d44ab41e2a71247fcd, type: 3}
+      propertyPath: questIdentifier
+      value: Get To Living Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23e944d1a3a8f5d44ab41e2a71247fcd, type: 3}
 --- !u!4 &369051057 stripped
@@ -1916,6 +1955,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6583759464586266090, guid: 23e944d1a3a8f5d44ab41e2a71247fcd, type: 3}
   m_PrefabInstance: {fileID: 369051056}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &400980788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400980789}
+  - component: {fileID: 400980790}
+  m_Layer: 0
+  m_Name: Reverb room (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400980789
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400980788}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.7, y: 4.24, z: -22.9}
+  m_LocalScale: {x: 0.94983834, y: 1, z: 0.8670923}
+  m_Children: []
+  m_Father: {fileID: 243742986}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &400980790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400980788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97139fbde32144241958106d7df4b4e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rt60s:
+  - 0.65726167
+  - 0.6550118
+  - 0.6376662
+  - 0.6605289
+  - 0.61952275
+  - 0.53190154
+  - 0.5363142
+  - 0.5843965
+  - 0.45677447
+  reverbGainDb: 0
+  reverbBrightness: 0
+  reverbTime: 1
+  regionShape: 1
+  boxRegionSize: {x: 19.2, y: 9.29, z: 27.85}
+  sphereRegionRadius: 1
+  onlyApplyWhenVisible: 1
+  proxyRoomPosition: {x: 117.440025, y: 5.0352473, z: -1.8555219}
+  proxyRoomRotation: {x: 0, y: 0, z: 0, w: 1}
+  proxyRoomSize: {x: 13.441193, y: 13.441193, z: 13.441193}
+  proxyRoomLeftWall: 1
+  proxyRoomRightWall: 4
+  proxyRoomFloor: 1
+  proxyRoomCeiling: 1
+  proxyRoomBackWall: 4
+  proxyRoomFrontWall: 4
 --- !u!1001 &407527153
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2999,7 +3107,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: onQuestComplete.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: onQuestStart.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -3032,7 +3140,7 @@ PrefabInstance:
     - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: onQuestComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1263631162}
     - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: onQuestStart.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
@@ -3999,6 +4107,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 796344401}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &814072528 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6583759464586266091, guid: 23e944d1a3a8f5d44ab41e2a71247fcd, type: 3}
+  m_PrefabInstance: {fileID: 369051056}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b55a3118256bf447bcc8fe9d22b7753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &823641477
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5340,6 +5459,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6199887553770841895, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
   m_PrefabInstance: {fileID: 1104503825}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1146058413
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1146058414}
+  - component: {fileID: 1146058415}
+  m_Layer: 0
+  m_Name: Reverb room (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1146058414
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146058413}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.6, y: 4.24, z: 0.2}
+  m_LocalScale: {x: 0.94983834, y: 1, z: 0.6923298}
+  m_Children: []
+  m_Father: {fileID: 243742986}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1146058415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146058413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97139fbde32144241958106d7df4b4e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rt60s:
+  - 0.8076621
+  - 0.809629
+  - 0.78283274
+  - 0.9245602
+  - 0.88218606
+  - 0.6747665
+  - 0.6944053
+  - 0.7958215
+  - 0.5476972
+  reverbGainDb: 0
+  reverbBrightness: 0
+  reverbTime: 1
+  regionShape: 1
+  boxRegionSize: {x: 19.2, y: 9.29, z: 27.85}
+  sphereRegionRadius: 1
+  onlyApplyWhenVisible: 1
+  proxyRoomPosition: {x: 135.01427, y: 4.722406, z: 22.430613}
+  proxyRoomRotation: {x: 0, y: 0, z: 0, w: 1}
+  proxyRoomSize: {x: 13.112088, y: 13.112088, z: 13.112088}
+  proxyRoomLeftWall: 4
+  proxyRoomRightWall: 1
+  proxyRoomFloor: 19
+  proxyRoomCeiling: 1
+  proxyRoomBackWall: 22
+  proxyRoomFrontWall: 22
 --- !u!1001 &1178579216
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5828,6 +6016,181 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+--- !u!1 &1263631158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1263631159}
+  - component: {fileID: 1263631161}
+  - component: {fileID: 1263631160}
+  - component: {fileID: 1263631162}
+  m_Layer: 0
+  m_Name: BackgroundMusic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1263631159
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263631158}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1331124851}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1263631160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263631158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5e1719799ca4f9b9f5db81449517ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bypassRoomEffects: 0
+  directivityAlpha: 0
+  directivitySharpness: 1
+  listenerDirectivityAlpha: 0
+  listenerDirectivitySharpness: 1
+  gainDb: 0
+  nearFieldEffectEnabled: 0
+  nearFieldEffectGain: 1
+  occlusionEnabled: 0
+  occlusionIntensity: 1
+  quality: 2
+--- !u!82 &1263631161
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263631158}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 248799cb4acba48f7b3ee842a80f788c, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 6394d14f45ad2a44596867c0015b0aea, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 1
+  SpatializePostEffects: 1
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 5
+  MaxDistance: 40
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1263631162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263631158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96f004ed6acbe6f499109df566324a66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startOnAwake: 0
+  audioClips:
+  - {fileID: 8300000, guid: 6394d14f45ad2a44596867c0015b0aea, type: 3}
+  playAsSequence: 0
+  onSequenceStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onSequenceEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  initialVolume: 0
 --- !u!1001 &1267969746
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11416,15 +11779,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bypassRoomEffects: 0
-  directivityAlpha: 0.501
+  directivityAlpha: 0
   directivitySharpness: 1
-  listenerDirectivityAlpha: 0.384
+  listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
   gainDb: 24
   nearFieldEffectEnabled: 0
   nearFieldEffectGain: 1
   occlusionEnabled: 1
-  occlusionIntensity: 1
+  occlusionIntensity: 2.29
   quality: 2
 --- !u!82 &1324964012
 AudioSource:
@@ -11647,6 +12010,7 @@ Transform:
   - {fileID: 638712035}
   - {fileID: 45596442}
   - {fileID: 774966604}
+  - {fileID: 1263631159}
   m_Father: {fileID: 1479280729}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12046,6 +12410,75 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1356475910
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1356475911}
+  - component: {fileID: 1356475912}
+  m_Layer: 0
+  m_Name: Reverb room (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1356475911
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356475910}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.5, y: 4.24, z: 6.7}
+  m_LocalScale: {x: 1.2757, y: 1, z: 0.4950596}
+  m_Children: []
+  m_Father: {fileID: 243742986}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1356475912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356475910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97139fbde32144241958106d7df4b4e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rt60s:
+  - 0.9783785
+  - 0.9751176
+  - 0.93960565
+  - 1.0112288
+  - 0.9293827
+  - 0.72279674
+  - 0.7397542
+  - 0.8432362
+  - 0.5733182
+  reverbGainDb: 0
+  reverbBrightness: 0
+  reverbTime: 1
+  regionShape: 1
+  boxRegionSize: {x: 19.2, y: 9.29, z: 27.85}
+  sphereRegionRadius: 1
+  onlyApplyWhenVisible: 1
+  proxyRoomPosition: {x: 94.59759, y: 4.7974653, z: 28.019468}
+  proxyRoomRotation: {x: 0, y: 0, z: 0, w: 1}
+  proxyRoomSize: {x: 11.642699, y: 11.642699, z: 11.642699}
+  proxyRoomLeftWall: 4
+  proxyRoomRightWall: 4
+  proxyRoomFloor: 5
+  proxyRoomCeiling: 1
+  proxyRoomBackWall: 21
+  proxyRoomFrontWall: 5
 --- !u!1 &1378790823
 GameObject:
   m_ObjectHideFlags: 0
@@ -15556,6 +15989,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6199887553770841895, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
   m_PrefabInstance: {fileID: 1938935889}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1940349231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1940349232}
+  - component: {fileID: 1940349233}
+  m_Layer: 0
+  m_Name: Reverb room
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1940349232
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940349231}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.199997, y: 4.24, z: 4.1000004}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 243742986}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1940349233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940349231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97139fbde32144241958106d7df4b4e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rt60s:
+  - 0.98099834
+  - 0.9592327
+  - 0.9285337
+  - 0.6641578
+  - 0.60538536
+  - 0.58457583
+  - 0.57849795
+  - 0.5844686
+  - 0.49308926
+  reverbGainDb: 0
+  reverbBrightness: 0
+  reverbTime: 1
+  regionShape: 1
+  boxRegionSize: {x: 19.2, y: 9.29, z: 27.85}
+  sphereRegionRadius: 1
+  onlyApplyWhenVisible: 1
+  proxyRoomPosition: {x: 116.2518, y: 4.7731504, z: 24.980495}
+  proxyRoomRotation: {x: 0, y: 0, z: 0, w: 1}
+  proxyRoomSize: {x: 14.300824, y: 14.300824, z: 14.300824}
+  proxyRoomLeftWall: 4
+  proxyRoomRightWall: 4
+  proxyRoomFloor: 7
+  proxyRoomCeiling: 1
+  proxyRoomBackWall: 10
+  proxyRoomFrontWall: 10
 --- !u!1 &1944022145
 GameObject:
   m_ObjectHideFlags: 0
