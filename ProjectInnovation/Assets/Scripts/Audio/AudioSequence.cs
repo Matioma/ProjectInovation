@@ -60,6 +60,7 @@ public class AudioSequence : MonoBehaviour
     }
 
     public void PlayClip() {
+        GetComponent<AudioSource>().Stop();
         GetComponent<AudioSource>().clip = audioClips[audioIndex];
         GetComponent<AudioSource>().Play();
     }
