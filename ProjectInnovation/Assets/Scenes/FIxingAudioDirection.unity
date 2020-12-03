@@ -1606,7 +1606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startOnAwake: 0
   audioClips:
-  - {fileID: 8300000, guid: 7ab458eba2d12ef4f8465775abf96e77, type: 3}
+  - {fileID: 8300000, guid: 67445dcc66c301f4ab290e7b12cd432d, type: 3}
   playAsSequence: 1
   onSequenceStart:
     m_PersistentCalls:
@@ -1632,7 +1632,7 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
-  gainDb: 0
+  gainDb: 10
   nearFieldEffectEnabled: 0
   nearFieldEffectGain: 1
   occlusionEnabled: 1
@@ -1891,7 +1891,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startOnAwake: 0
   audioClips:
-  - {fileID: 8300000, guid: 619a08e48b9d01241bbd09964b7da80d, type: 3}
+  - {fileID: 8300000, guid: 7be3ca53e9e6d7c499c7e375697d4c88, type: 3}
   playAsSequence: 1
   onSequenceStart:
     m_PersistentCalls:
@@ -1917,7 +1917,7 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
-  gainDb: 0
+  gainDb: 10
   nearFieldEffectEnabled: 0
   nearFieldEffectGain: 1
   occlusionEnabled: 1
@@ -2092,7 +2092,7 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0.384
   listenerDirectivitySharpness: 1
-  gainDb: 0
+  gainDb: 10
   nearFieldEffectEnabled: 0
   nearFieldEffectGain: 1
   occlusionEnabled: 1
@@ -4042,7 +4042,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6199887553770841889, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
       propertyPath: keyPhrase
-      value: Gertrude Coffee
+      value: make coffee
       objectReference: {fileID: 0}
     - target: {fileID: 6199887553770841889, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
       propertyPath: rangeIsImportant
@@ -4402,7 +4402,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startOnAwake: 0
   audioClips:
-  - {fileID: 8300000, guid: 10e8075acc763f3408c7d4385558ee04, type: 3}
+  - {fileID: 8300000, guid: c4d984691f6099e41b5bfa6b5382c455, type: 3}
+  - {fileID: 8300000, guid: 0bb484152f413d3448f04ea789b87afd, type: 3}
   playAsSequence: 1
   onSequenceStart:
     m_PersistentCalls:
@@ -4428,7 +4429,7 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
-  gainDb: 0
+  gainDb: 10
   nearFieldEffectEnabled: 0
   nearFieldEffectGain: 1
   occlusionEnabled: 1
@@ -7130,6 +7131,7 @@ MonoBehaviour:
   audioClips:
   - {fileID: 8300000, guid: 28b450389a176a443bb3f6f74872c8da, type: 3}
   - {fileID: 8300000, guid: 530ddab95e637e14bbaa6541c2a5c99a, type: 3}
+  - {fileID: 8300000, guid: d6ae32f8e4dbcbe40b5e2bec503e4c24, type: 3}
   playAsSequence: 1
   onSequenceStart:
     m_PersistentCalls:
@@ -7155,7 +7157,7 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
-  gainDb: 0
+  gainDb: 10
   nearFieldEffectEnabled: 0
   nearFieldEffectGain: 1
   occlusionEnabled: 1
@@ -8412,7 +8414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startOnAwake: 0
   audioClips:
-  - {fileID: 8300000, guid: 4536718d5a7553e49a89b8d9b003cd69, type: 3}
+  - {fileID: 8300000, guid: ff8fc0601e31cef4083b0078d721b541, type: 3}
   playAsSequence: 1
   onSequenceStart:
     m_PersistentCalls:
@@ -8438,7 +8440,7 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
-  gainDb: 0
+  gainDb: 10
   nearFieldEffectEnabled: 0
   nearFieldEffectGain: 1
   occlusionEnabled: 1
@@ -14817,7 +14819,7 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
-  gainDb: 0
+  gainDb: 10
   nearFieldEffectEnabled: 0
   nearFieldEffectGain: 1
   occlusionEnabled: 1
@@ -15343,7 +15345,7 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0.384
   listenerDirectivitySharpness: 1
-  gainDb: 0
+  gainDb: 10
   nearFieldEffectEnabled: 0
   nearFieldEffectGain: 1
   occlusionEnabled: 1
@@ -16945,7 +16947,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startOnAwake: 0
   audioClips:
-  - {fileID: 8300000, guid: e241ba1ba28688545a20fc5f8ad77627, type: 3}
+  - {fileID: 8300000, guid: d507e5499d5cc454abea65c7a02358d2, type: 3}
   playAsSequence: 1
   onSequenceStart:
     m_PersistentCalls:
@@ -16971,7 +16973,7 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
-  gainDb: 0
+  gainDb: 10
   nearFieldEffectEnabled: 0
   nearFieldEffectGain: 1
   occlusionEnabled: 1
@@ -18501,7 +18503,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startOnAwake: 0
   audioClips:
-  - {fileID: 8300000, guid: 4536718d5a7553e49a89b8d9b003cd69, type: 3}
+  - {fileID: 8300000, guid: 461a3a688860cef42ad7636a25842d88, type: 3}
   playAsSequence: 1
   onSequenceStart:
     m_PersistentCalls:
@@ -18527,7 +18529,7 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
-  gainDb: 0
+  gainDb: 10
   nearFieldEffectEnabled: 0
   nearFieldEffectGain: 1
   occlusionEnabled: 1
@@ -19078,7 +19080,7 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0.384
   listenerDirectivitySharpness: 1
-  gainDb: 10.6
+  gainDb: 10
   nearFieldEffectEnabled: 0
   nearFieldEffectGain: 1
   occlusionEnabled: 1
@@ -19873,7 +19875,7 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0.384
   listenerDirectivitySharpness: 1
-  gainDb: 5
+  gainDb: 10
   nearFieldEffectEnabled: 0
   nearFieldEffectGain: 1
   occlusionEnabled: 1
