@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4768823}
   - component: {fileID: 4768824}
+  - component: {fileID: 4768825}
   m_Layer: 0
   m_Name: QuestLine
   m_TagString: Untagged
@@ -210,6 +211,19 @@ MonoBehaviour:
   - {fileID: 341625692}
   - {fileID: 36691660}
   - {fileID: 1429497948}
+--- !u!114 &4768825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4768822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e81931f2788c52240a6cb538dd13ab5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyPhrase: quit
 --- !u!1001 &5674161
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3866,7 +3880,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 434357218}
-  - component: {fileID: 434357219}
   m_Layer: 0
   m_Name: Quests
   m_TagString: Untagged
@@ -3913,18 +3926,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &434357219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 434357217}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e81931f2788c52240a6cb538dd13ab5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &452877728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16519,7 +16520,7 @@ PrefabInstance:
     - target: {fileID: 6199887553770841889, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
       propertyPath: onActivateObject.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 434357219}
+      objectReference: {fileID: 4768825}
     - target: {fileID: 6199887553770841889, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
       propertyPath: onActivateObject.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: QuitGame, Assembly-CSharp

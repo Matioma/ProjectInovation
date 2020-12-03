@@ -20,6 +20,12 @@ public class VoiceCommand : MonoBehaviour
         //actions.Add("are you here", AreYouHere);
         // actions.Add("hello", AreYouHere);
 
+        var quitGame = FindObjectOfType<QuitGame>();
+        if (quitGame.keyPhrase != "") {
+            actions.Add(quitGame.keyPhrase, quitGame.onSayQuit);
+        }
+
+
         foreach (var ActivateObject in FindObjectsOfType<ActivateObjectQuest>())
         {
 
