@@ -2066,7 +2066,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startOnAwake: 0
   audioClips:
-  - {fileID: 8300000, guid: f6d500746daa43b4082380bd9e14a2fa, type: 3}
+  - {fileID: 8300000, guid: 7cd039c75f721824c83c879b74486b74, type: 3}
   playAsSequence: 1
   onSequenceStart:
     m_PersistentCalls:
@@ -5659,11 +5659,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: onQuestStart.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: 
+      value: AudioSequence, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: onQuestStart.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: StartSequence
       objectReference: {fileID: 0}
     - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: audioToWait
@@ -5691,12 +5691,12 @@ PrefabInstance:
       objectReference: {fileID: 1598874662}
     - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: onQuestStart.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: 
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: onQuestStart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 166183674}
+      objectReference: {fileID: 166183676}
     - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: onQuestComplete.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: AudioSequence, Assembly-CSharp
@@ -7128,7 +7128,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startOnAwake: 0
   audioClips:
-  - {fileID: 8300000, guid: 69ea3817859479f4daaf1e598f502b15, type: 3}
+  - {fileID: 8300000, guid: 28b450389a176a443bb3f6f74872c8da, type: 3}
+  - {fileID: 8300000, guid: 530ddab95e637e14bbaa6541c2a5c99a, type: 3}
   playAsSequence: 1
   onSequenceStart:
     m_PersistentCalls:
@@ -14789,8 +14790,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startOnAwake: 0
   audioClips:
-  - {fileID: 8300000, guid: 44baea654724d9043906b803740a84ba, type: 3}
-  - {fileID: 8300000, guid: a9e9c9a18bd7f8c4c9da882ebabea232, type: 3}
+  - {fileID: 8300000, guid: c1d6c57da2d6fab43816473ee980a4a4, type: 3}
+  - {fileID: 8300000, guid: acca1f65d690f14478e23eb39935060f, type: 3}
   playAsSequence: 1
   onSequenceStart:
     m_PersistentCalls:
@@ -15316,7 +15317,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startOnAwake: 0
   audioClips:
-  - {fileID: 8300000, guid: 9f33a7c0afbd30f42ab400fe08ca7377, type: 3}
+  - {fileID: 8300000, guid: 7a976e4cd73021742a7ee3fe66363587, type: 3}
   playAsSequence: 1
   onSequenceStart:
     m_PersistentCalls:
@@ -19051,7 +19052,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startOnAwake: 0
   audioClips:
-  - {fileID: 8300000, guid: 6b32fff58d0a6e04ab250c0f7fe94af5, type: 3}
+  - {fileID: 8300000, guid: 88349a5bdaf27f74387e43a401d35ae8, type: 3}
   playAsSequence: 1
   onSequenceStart:
     m_PersistentCalls:
@@ -19846,7 +19847,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startOnAwake: 0
   audioClips:
-  - {fileID: 8300000, guid: 70436e28dbf1ccc4384a5fbf34c864ba, type: 3}
+  - {fileID: 8300000, guid: 77f972da741ad694d83accf4b5bc6aa8, type: 3}
   playAsSequence: 1
   onSequenceStart:
     m_PersistentCalls:
