@@ -1582,6 +1582,7 @@ MonoBehaviour:
   audioClips:
   - {fileID: 8300000, guid: cc73ac013a1996247a9766ddd32bf4b1, type: 3}
   - {fileID: 8300000, guid: fd7d4b5b178cfdf4e9f9f00b35929bd7, type: 3}
+  - {fileID: 8300000, guid: fd7d4b5b178cfdf4e9f9f00b35929bd7, type: 3}
   playAsSequence: 0
   onSequenceStart:
     m_PersistentCalls:
@@ -1689,7 +1690,7 @@ AudioSource:
   SpatializePostEffects: 1
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 5
+  MinDistance: 10
   MaxDistance: 30.54
   Pan2D: 0
   rolloffMode: 0
@@ -2274,6 +2275,8 @@ MonoBehaviour:
   startOnAwake: 0
   audioClips:
   - {fileID: 8300000, guid: 24573eb5938730e4b9e9fb596ac23a7e, type: 3}
+  - {fileID: 8300000, guid: 24573eb5938730e4b9e9fb596ac23a7e, type: 3}
+  - {fileID: 8300000, guid: 24573eb5938730e4b9e9fb596ac23a7e, type: 3}
   playAsSequence: 0
   onSequenceStart:
     m_PersistentCalls:
@@ -2629,7 +2632,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &243742986
 Transform:
   m_ObjectHideFlags: 0
@@ -7872,15 +7875,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6199887553770841895, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -124.195274
+      value: -14.7
       objectReference: {fileID: 0}
     - target: {fileID: 6199887553770841895, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.427574
+      value: 2.9
       objectReference: {fileID: 0}
     - target: {fileID: 6199887553770841895, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -40.627403
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6199887553770841895, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
       propertyPath: m_LocalRotation.x
@@ -18002,6 +18005,8 @@ MonoBehaviour:
   startOnAwake: 0
   audioClips:
   - {fileID: 8300000, guid: e2e255373163b304ebb661cce9e66251, type: 3}
+  - {fileID: 8300000, guid: e2e255373163b304ebb661cce9e66251, type: 3}
+  - {fileID: 8300000, guid: e2e255373163b304ebb661cce9e66251, type: 3}
   playAsSequence: 0
   onSequenceStart:
     m_PersistentCalls:
@@ -18773,7 +18778,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1693702531}
   m_LocalRotation: {x: -0, y: -0.6721997, z: -0, w: 0.7403699}
-  m_LocalPosition: {x: -12.3, y: 7.538973, z: -5.3}
+  m_LocalPosition: {x: 21.13, y: 7.538973, z: -12.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1844441191}
