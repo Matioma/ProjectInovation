@@ -3059,11 +3059,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6199887553770841889, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
       propertyPath: keyPhrase
-      value: Ruby clean
+      value: Go clean
       objectReference: {fileID: 0}
     - target: {fileID: 6199887553770841889, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
       propertyPath: rangeIsImportant
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6199887553770841889, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
       propertyPath: onQuestComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -9091,7 +9091,7 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
-  gainDb: 0
+  gainDb: 15
   nearFieldEffectEnabled: 0
   nearFieldEffectGain: 1
   occlusionEnabled: 1
@@ -9117,7 +9117,7 @@ AudioSource:
   SpatializePostEffects: 1
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 11.86
+  MinDistance: 12
   MaxDistance: 68.7
   Pan2D: 0
   rolloffMode: 0
