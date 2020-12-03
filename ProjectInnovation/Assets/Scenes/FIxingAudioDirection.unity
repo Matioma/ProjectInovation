@@ -198,11 +198,11 @@ MonoBehaviour:
   - {fileID: 710918839}
   - {fileID: 814072528}
   - {fileID: 738515658}
-  - {fileID: 0}
+  - {fileID: 321246752}
   - {fileID: 1197468507}
   - {fileID: 944584669}
   - {fileID: 5674163}
-  - {fileID: 0}
+  - {fileID: 1484078690}
   - {fileID: 1289266512}
   - {fileID: 786318356}
   - {fileID: 81801649}
@@ -1433,7 +1433,7 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
-  gainDb: 0
+  gainDb: 10
   nearFieldEffectEnabled: 0
   nearFieldEffectGain: 1
   occlusionEnabled: 1
@@ -2267,7 +2267,7 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
-  gainDb: 0
+  gainDb: 10
   nearFieldEffectEnabled: 0
   nearFieldEffectGain: 1
   occlusionEnabled: 1
@@ -2293,7 +2293,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 10
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -3155,6 +3155,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
+--- !u!114 &321246752 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6199887553770841889, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
+  m_PrefabInstance: {fileID: 321246751}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74c124da775d74b438d11edada5dc3dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &327796675
 GameObject:
   m_ObjectHideFlags: 0
@@ -6104,7 +6115,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: onQuestStart.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: onQuestComplete.m_PersistentCalls.m_Calls.Array.size
@@ -6134,6 +6145,22 @@ PrefabInstance:
       propertyPath: onQuestStart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1884002140}
+    - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
+      propertyPath: onQuestStart.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: DisableMovement
+      objectReference: {fileID: 0}
+    - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
+      propertyPath: onQuestStart.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
+      propertyPath: onQuestStart.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 985142742}
+    - target: {fileID: 6819082155118385258, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
+      propertyPath: onQuestStart.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: DemoPlayerController, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 6819082155118385259, guid: b7e80061c2f04ff43bfb284d8b8311ad, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.2
@@ -7454,6 +7481,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007f46cc98ab4ea48b3b9d8f94d66a54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &985142742 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114813845994636886, guid: 5740136243dc84ebabac64bee9f03af4, type: 3}
+  m_PrefabInstance: {fileID: 10852247}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985142740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549bcd937d9264be5b34b1c113bef687, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &985142745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8652,7 +8690,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6199887553770841889, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
       propertyPath: onQuestComplete.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6199887553770841889, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
       propertyPath: user
@@ -8737,14 +8775,14 @@ PrefabInstance:
     - target: {fileID: 6199887553770841889, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
       propertyPath: onQuestComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 985142742}
     - target: {fileID: 6199887553770841889, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
       propertyPath: onQuestComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: AudioSequence, Assembly-CSharp
+      value: DemoPlayerController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6199887553770841889, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
       propertyPath: onQuestComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartSequence
+      value: EnableMovement
       objectReference: {fileID: 0}
     - target: {fileID: 6199887553770841889, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
       propertyPath: onQuestComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -14751,8 +14789,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startOnAwake: 0
   audioClips:
-  - {fileID: 8300000, guid: 8e8f04c2d741a2743adcf844824c4b96, type: 3}
-  - {fileID: 8300000, guid: ee9ae142f35b0d940a89228a4cff2f6f, type: 3}
+  - {fileID: 8300000, guid: 44baea654724d9043906b803740a84ba, type: 3}
+  - {fileID: 8300000, guid: a9e9c9a18bd7f8c4c9da882ebabea232, type: 3}
   playAsSequence: 1
   onSequenceStart:
     m_PersistentCalls:
@@ -16769,6 +16807,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1484078690 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6199887553770841889, guid: 6efb4bcd5b88a954c9575344fa06aa35, type: 3}
+  m_PrefabInstance: {fileID: 857390735}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74c124da775d74b438d11edada5dc3dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1485200295
 GameObject:
   m_ObjectHideFlags: 0
@@ -17735,7 +17784,7 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
-  gainDb: 0
+  gainDb: 10
   nearFieldEffectEnabled: 0
   nearFieldEffectGain: 1
   occlusionEnabled: 1
@@ -17761,7 +17810,7 @@ AudioSource:
   SpatializePostEffects: 1
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 10
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -19028,7 +19077,7 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0.384
   listenerDirectivitySharpness: 1
-  gainDb: 0
+  gainDb: 10.6
   nearFieldEffectEnabled: 0
   nearFieldEffectGain: 1
   occlusionEnabled: 1
@@ -19776,13 +19825,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1876064268}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.22, y: 7.798973, z: -1.23}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -5.1900024, y: 11.02, z: -1.2299995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1844441191}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &1876064270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19819,11 +19868,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bypassRoomEffects: 0
-  directivityAlpha: 0
+  directivityAlpha: 0.52
   directivitySharpness: 1
   listenerDirectivityAlpha: 0.384
   listenerDirectivitySharpness: 1
-  gainDb: 0
+  gainDb: 5
   nearFieldEffectEnabled: 0
   nearFieldEffectGain: 1
   occlusionEnabled: 1
@@ -19849,7 +19898,7 @@ AudioSource:
   SpatializePostEffects: 1
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 2.26
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
